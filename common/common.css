@@ -1,0 +1,16 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.skybck {
+    background-image: url('https://pinegrow.com/pg4assets/img/blue.bck.jpg');
+    background-size: cover;
+}
+
+.pgia-example {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

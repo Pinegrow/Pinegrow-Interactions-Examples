@@ -1,0 +1,55 @@
+#ExamplePopoutMenu .toggle span {
+    width: 20px;
+    height: 2px;
+    background-color: #4a4a4a;
+    display: block;
+    margin-bottom: 4px;
+}
+
+#ExamplePopoutMenu .toggle span:last-child {
+    margin-bottom: 0;
+}
+
+#ExamplePopoutMenu nav a {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    color: #404040;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+
+    /* z-index: -1 */
+    border: 1px solid rgba(129, 129, 129, 0.85);
+}
+
+#ExamplePopoutMenu nav {
+    height: 60px;
+    position: relative;
+    margin-left: 80px;
+
+    /* position: absolute */
+}
+
+#ExamplePopoutMenu nav .toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#ExamplePopoutMenu a i {
+    font-size: 28px;
+}
