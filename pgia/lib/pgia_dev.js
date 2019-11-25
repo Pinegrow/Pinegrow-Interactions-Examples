@@ -262,16 +262,7 @@
                         var on_c = [];
                         var on_u = [];
 
-                        var props = {
-                            onStart: function() {
-                                //console.log('onStart!');
-                                on_s.forEach(function(f) {f()});
-                            },
-                            onComplete: function() {
-                                //console.log('onComplete!');
-                                on_c.forEach(function(f) {f()});
-                            }
-                        }
+                        var props = {};
 
                         var map = {
                             //Play during tween
@@ -344,6 +335,21 @@
                                 on_u.forEach(function(f) {f(tween)});
                             }
                             props.onUpdateParams = ["{self}"];
+                        }
+
+                        if(on_s.length) {
+                            props.onStart = function() {
+                                //console.log('onStart!');
+                                on_s.forEach(function(f) {f()});
+                            }
+                        }
+                        if(on_c.length) {
+                            props.onComplete = function () {
+                                //console.log('onComplete!');
+                                on_c.forEach(function (f) {
+                                    f()
+                                });
+                            }
                         }
 
                         var pos = t.p;
@@ -1765,7 +1771,9 @@
         this.delayTimer ? clearTimeout(this.delayTimer) : null;
 
         if (this.pauseOther) {
-            this.parent.pauseOther(this, getParam(_this.data, 'pol', '').split(/\s?,\s?/));
+            var po = getParam(_this.data, 'pol', '');
+            this.parent.pauseOther(this, po ? po.split(/\s?,\s?/) : []);
+            tl.invalidate();
         }
 
         if ((tl.time() === zero || start === zero) && this.data.dly) {
@@ -2316,7 +2324,7 @@
                 }
             })
 
-            tl.seek(Math.max(0, tl.duration() * progress), !in_pg /* events in pg */);
+            tl.seek(Math.max(0, tl.duration() * progress), false /* do events */);
 
             animations.forEach(function (itl) {
 
