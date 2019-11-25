@@ -2,6 +2,8 @@ html,
 body {
     height: 100%;
     margin: 0;
+    font-family: Georgia,serif;
+    line-height: 1.33;
 }
 
 .skybck {

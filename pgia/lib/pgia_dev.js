@@ -48,10 +48,42 @@
 
     if(!enabled) return;
 
-    var pf = parseFloat;
+    var is_ff = navigator.userAgent.indexOf("Firefox") >= 0;
+
+    function pf(num, def) {
+        var r = parseFloat(num);
+        return isNaN() ? def : r;
+    }
 
     function startsWith(s, m) {
         return s.indexOf(m) === 0;
+    }
+
+    function noop() {}
+
+    function playMedia(n, func, v) {
+        if(n[func]) {
+            try {
+                (v !== '') && (n.currentTime = pf(v, 0));
+                if(func === 'play') {
+                    n[func]().then(function () {
+                        n._pgia_broken = false;
+
+                    }).catch(function (e) {
+                        n._pgia_broken = true;
+
+                        //probably autoplay
+                        if (func === 'play' && !n.muted) {
+                            n.muted = true;
+                            playMedia(n, func, v);
+                        }
+                        log(e);
+                    });
+                } else {
+                    n[func]();
+                }
+            } catch(e) {log(e);}
+        }
     }
 
     var PgAnimationInfo = function () {
@@ -92,7 +124,7 @@
     }
 
     var isDisabled = function(a) {
-        return a.on ? (a.on === 'mobile' ? !is_mobile : is_mobile) : false;
+        return a ? (a.on ? (a.on === 'mobile' ? !is_mobile : is_mobile) : false) : false;
     }
 
 
@@ -228,6 +260,7 @@
 
                         var on_s = [];
                         var on_c = [];
+                        var on_u = [];
 
                         var props = {
                             onStart: function() {
@@ -241,19 +274,41 @@
                         }
 
                         var map = {
+                            //Play during tween
+                            'media.playing': function(p, v) {
+                                var f = function() {
+                                    nodes.forEach(function(n) {
+                                        if(n.paused && !n._pgia_broken && (v != ''|| isNaN(n.duration) || n.duration > n.currentTime)) {
+                                            playMedia(n, 'play', v);
+                                        }
+                                    })
+                                }
+                                on_s.push(f);
+                                on_u.push(f);
+                                on_c.push(function() {
+                                    nodes.forEach(function(n) {
+                                        playMedia(n, 'pause', '');
+                                    })
+                                });
+                            },
                             'media.play': function(p, v) {
                                 on_s.push(function() {
                                     nodes.forEach(function(n) {
-                                        n.play && n.play();
-                                        (v !== '') && (n.currentTime = pf(v));
+                                        playMedia(n, 'play', v);
                                     })
                                 });
                             },
                             'media.stop': function(p, v) {
                                 on_s.push(function() {
                                     nodes.forEach(function(n) {
-                                        n.pause && n.pause();
-                                        (v !== '') && (n.currentTime = pf(v));
+                                        playMedia(n, 'pause', v);
+                                    })
+                                });
+                            },
+                            'media.mute': function(p, v) {
+                                on_s.push(function() {
+                                    nodes.forEach(function(n) {
+                                        n.muted = !!v;
                                     })
                                 });
                             },
@@ -282,6 +337,13 @@
 
                         if(t.e) {
                             props.ease = getEase(t.e);
+                        }
+
+                        if(on_u.length) {
+                            props.onUpdate = function(tween) {
+                                on_u.forEach(function(f) {f(tween)});
+                            }
+                            props.onUpdateParams = ["{self}"];
                         }
 
                         var pos = t.p;
@@ -1465,7 +1527,7 @@
             return pgia.animationPresets.getTimeline(name, el) || new TimelineMax();
         } else {
             var ca = new PgCustomAnimation();
-            return ca.getTimeline(name, el);
+            return ca.getTimeline(name || {}, el);
         }
     }
 
@@ -1691,7 +1753,8 @@
         var rev = this.reverse;
 
         if(_this.toggRev) {
-            rev = _this.trigC++ % 2;
+            (_this.trigC++ % 2 === 1) && (rev = !rev);
+            //rev = (_this.trigC++ % 2 === (rev ? 1 : 0));
             tl.timeScale(rev ? getParam(_this.data, 'spdrev', 100)/100.0 : 1);
         }
 
@@ -2066,7 +2129,7 @@
             var sa;
 
             try {
-                sa = JSON.parse(el.getAttribute('data-pg-ia-scene'));
+                sa = JSON.parse(el.getAttribute('data-pg-ia-scene') || '{}');
             } catch (err) {
                 log(err);
                 return;
@@ -2128,7 +2191,7 @@
                 for (var i = 0; i < children.length; i++) {
                     var a = children[i];
 
-                    if(!a.a || isDisabled(a)) {
+                    if(isDisabled(a)) {
                         animations.push({disabled: true});
 
                     } else {
@@ -2670,8 +2733,10 @@
         }
     }
 
-    pgia.smoothScrollManager = new PGSmoothScrollManager();
-    pgia.smoothScrollManager.init();
+    if(!is_ff) {
+        pgia.smoothScrollManager = new PGSmoothScrollManager();
+        pgia.smoothScrollManager.init();
+    }
 
 
 })();
