@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700&display=swap');
+
 html,
 body {
     min-height: 100%;
     margin: 0;
-    font-family: Georgia,serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.33;
 }
 
@@ -24,4 +26,68 @@ body {
 
 h1 {
     font-size: 30px;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    opacity: 0.8;
+}
+
+.menu-toggle .icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #ffffff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.menu-toggle .icon-bar:last-child {
+    margin-bottom: 0;
+}
+
+.site-menu.dark .menu-toggle {
+    border: 1px solid #222222;
+}
+
+.site-menu.dark .menu-toggle .icon-bar {
+    background-color: #222222;
+}
+
+.offpage-menu {
+    width: 320px;
+    position: fixed;
+    bottom: 10px;
+    top: 53px;
+    left: 10px;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.93);
+    padding: 10px 20px 20px;
+}
+
+.menu-toggle:hover {
+    opacity: 1;
+}
+
+a {
+    color: #006ab6;
+}
+
+.site-menu {
+    z-index: 10;
+    position: absolute;
+}
+
+.site-menu.dark .offpage-menu {
+    background-color: rgba(72, 72, 72, 0.96);
+    color: #ffffff;
+}
+
+.site-menu.dark a {
+    color: #ffffff;
 }

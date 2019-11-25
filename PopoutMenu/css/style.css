@@ -31,7 +31,9 @@
 #ExamplePopoutMenu nav {
     height: 60px;
     position: relative;
-    margin-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 407px;
 
     /* position: absolute */
 }
