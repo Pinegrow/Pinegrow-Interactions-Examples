@@ -1,6 +1,6 @@
 html,
 body {
-    height: 100%;
+    min-height: 100%;
     margin: 0;
     font-family: Georgia,serif;
     line-height: 1.33;
@@ -15,4 +15,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 30px;
 }

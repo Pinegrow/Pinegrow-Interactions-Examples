@@ -1,0 +1,32 @@
+main {
+    width: 80%;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+main img {
+    max-width: 100%;
+}
+
+.scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.27);
+    display: none;
+    background-color: #ffffff;
+}
+
+.scroll-indicator .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(90deg, rgb(220, 227, 91) 0%, rgb(69, 182, 73) 100%);
+}
