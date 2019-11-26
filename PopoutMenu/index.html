@@ -12,6 +12,24 @@
         <link rel="stylesheet" href="../common/common.css">
     </head>
     <body class="skybck">
+        <div id="ExamplePopoutMenu" class="pgia-example" style=" 
+height: 250px;
+">
+            <nav>
+                <a href="#" data-pg-ia='{"l":[{"trg":"click","a":{"n":"","l":[{"t":"^nav | .toggle","l":[{"t":"tween","p":0.3,"d":0.18,"l":{"pgia.play":"1"}}]},{"t":"","l":[{"t":"tween","p":0,"d":0.3,"l":{"scale":"1.4","zIndex":"3"}},{"t":"tween","p":0.34,"d":0.14,"l":{"scale":"1","zIndex":"0"}}]}]},"pdef":"true"},{"trg":"mouseenter","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.5,"l":{"scale":"1.1"}}]}]},"rstr":"true","po":"true","pol":"3"},{"trg":"mouseleave","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.2,"l":{"scale":"1"}}]}]},"rstr":"true","po":"true","pol":"2"}]}' data-pg-ia-apply="^nav | a"><i class="fas fa-bell"></i></a>
+                <a href="#"><i class="fas fa-birthday-cake"></i></a>
+                <a href="#"><i class="fas fa-broom"></i></a>
+                <a href="#"><i class="fas fa-book-open"></i></a>
+                <a href="#"><i class="fas fa-cloud-download-alt"></i></a>
+                <div class="toggle" data-pg-ia='{"l":[{"trg":"click","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.33,"l":{"autoAlpha":"0.5"}}]},{"t":"> span:nth-of-type(1)","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"45","y":"6"}}]},{"t":"> span:nth-of-type(3)","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"-45","y":"-6"}}]},{"t":"> span:nth-of-type(2)","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":"0"}}]},{"t":"^nav | a:nth-child(1)","l":[{"t":"tween","p":0,"d":0.2,"l":{"x":"68","rotationZ":"360"}}]},{"t":"^nav | a:nth-child(2)","l":[{"t":"tween","p":0,"d":0.3,"l":{"x":"136","rotationZ":"720"}}]},{"t":"^nav | a:nth-child(3)","l":[{"t":"tween","p":0,"d":0.4,"l":{"x":"204","rotationZ":"1080"}}]},{"t":"^nav | a:nth-child(4)","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"272","rotationZ":"1440"}}]},{"t":"^nav | a:nth-child(5)","l":[{"t":"tween","p":0,"d":0.6,"l":{"x":"340","rotationZ":"1800"}}]}]},"trev":"true","spdrev":"200"}]}' style=" 
+position: absolute;
+">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
         <div class="site-menu" data-pgc="site.menu" data-pgc-field="site.menu">
             <div class="menu-toggle" data-pg-ia='{"l":[{"trg":"click","tcv":"menu-toggle-open","trev":"true","a":{"n":"","l":[{"t":"$.offpage-menu","l":[{"t":"set","p":0,"d":0,"l":{"x":"-260","autoAlpha":"0"}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":"1","x":"0"}}]},{"t":".top-bar","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"45","y":"6"}}]},{"t":".bottom-bar","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"-45","y":"-6"}}]},{"t":".middle-bar","l":[{"t":"tween","p":0,"d":0.18,"l":{"autoAlpha":"0"}}]},{"t":"$.offpage-menu","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"menu-toggle-open"}},{"t":"tween","p":0,"d":0.5,"l":{"class.add":"menu-toggle-open"}}]}]}}]}'>
                 <span class="icon-bar top-bar"></span>
@@ -40,25 +58,6 @@
                 </ul>
             </div>
         </div>
-        <div id="ExamplePopoutMenu" class="pgia-example" style=" 
-height: 250px;
-">
-            <nav>
-                <a href="javascript:void(0)" data-pg-ia='{"l":[{"trg":"click","a":{"n":"","l":[{"t":"^nav | .toggle","l":[{"t":"tween","p":0.3,"d":0.18,"l":{"pgia.play":"1"}}]},{"t":"","l":[{"t":"tween","p":0,"d":0.3,"l":{"scale":"1.4","zIndex":"3"}},{"t":"tween","p":0.34,"d":0.14,"l":{"scale":"1","zIndex":"0"}}]}]}},{"trg":"mouseenter","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.5,"l":{"scale":"1.1"}}]}]},"po":"true","pol":"3"},{"trg":"mouseleave","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.3,"l":{"scale":"1"}}]}]},"po":"true","pol":"2"}]}' data-pg-ia-apply="^nav | a"><i class="fas fa-bell"></i></a>
-                <a href="javascript:void(0)"><i class="fas fa-birthday-cake"></i></a>
-                <a href="javascript:void(0)"><i class="fas fa-broom"></i></a>
-                <a href="javascript:void(0)"><i class="fas fa-book-open"></i></a>
-                <a href="javascript:void(0)"><i class="fas fa-cloud-download-alt"></i></a>
-                <div class="toggle" data-pg-ia='{"l":[{"trg":"click","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.33,"l":{"autoAlpha":"0.5"}}]},{"t":"> span:nth-of-type(1)","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"45","y":"6"}}]},{"t":"> span:nth-of-type(3)","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"-45","y":"-6"}}]},{"t":"> span:nth-of-type(2)","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":"0"}}]},{"t":"^nav | a:nth-child(1)","l":[{"t":"tween","p":0,"d":0.2,"l":{"x":"68","rotationZ":"360"}}]},{"t":"^nav | a:nth-child(2)","l":[{"t":"tween","p":0,"d":0.3,"l":{"x":"136","rotationZ":"720"}}]},{"t":"^nav | a:nth-child(3)","l":[{"t":"tween","p":0,"d":0.4,"l":{"x":"204","rotationZ":"1080"}}]},{"t":"^nav | a:nth-child(4)","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"272","rotationZ":"1440"}}]},{"t":"^nav | a:nth-child(5)","l":[{"t":"tween","p":0,"d":0.6,"l":{"x":"340","rotationZ":"1800"}}]}]},"trev":"true","spdrev":"200"}]}' style=" 
-position: absolute;
-">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-        <script type="text/javascript" src="../pgia/lib/pgia_lib.js"></script>
-        <script type="text/javascript" src="../pgia/lib/pgia_dev.js"></script>
+        <script type="text/javascript" src="../pgia/lib/pgia.js"></script>
     </body>
 </html>
