@@ -1756,6 +1756,8 @@
 
         if(!this._etc()) return;
 
+        _this.data.pdef && e && e.preventDefault();
+
         var rev = this.reverse;
 
         if(_this.toggRev) {
