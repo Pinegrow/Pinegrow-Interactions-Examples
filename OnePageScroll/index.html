@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>One Page Scroll</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    </head>
+    <body>
+        <div class="pages-container" data-pg-ia-scene='{"d":"600%","pin":"true","l":[{"t":".page-2","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"top":"100vh","left":"0"}},{"t":"tween","p":0,"d":1,"l":{"top":"0"}}]}]},"sc_d":"16"},{"t":".page-3","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"top":"100vh","left":"0"}},{"t":"tween","p":0,"d":1,"l":{"top":"0"}}]}]},"s":"16","sc_d":"16"},{"t":".page-4","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"left":"100%","top":"0"}},{"t":"tween","p":0,"d":1,"l":{"left":"0"}}]}]},"s":"32","sc_d":"16"},{"t":".page-5","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"top":"100vh","left":"100%"}},{"t":"tween","p":0,"d":1,"l":{"top":"0","left":"0"}}]}]},"s":"48","sc_d":"16"},{"t":".page-6","s":"64","p":"scroll","sc_d":"16","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"top":"100vh","left":"-100%"}},{"t":"tween","p":0,"d":1,"l":{"top":"70%","left":"-20%"},"e":"Linear.easeNone"},{"t":"tween","p":1,"d":1,"l":{"top":"20%","left":"30%"},"e":"Linear.easeNone"},{"t":"tween","p":2,"d":0.5,"l":{"top":"0","left":"0"},"e":"Linear.easeNone"}]}]}},{"t":".page-7","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"rotation":"0","top":"0","left":"0","scale":"0.2","autoAlpha":"0"}},{"t":"tween","p":0,"d":1,"l":{"rotation":"-360","scale":"1","autoAlpha":"1"}}]}]},"s":"80","sc_d":"20"},{"t":".page-7","a":"shake","s":"100","p":"time"}]}'>
+            <div class="centered-content bg-cover vh100 page-1">
+                <div class="text-center">
+                    <i class="fas fa-arrow-down display-big"></i>
+                    <h1>This is a one page</h1>
+                    <p>Try to scroll down to the end...</p>
+                </div>
+            </div>
+            <div class="centered-content bg-dark-cover vh100 page-2">
+                <div class="text-center">
+                    <i class="fas fa-angle-double-up display-big"></i>
+                    <h1>Page 2</h1>
+                    <p>This page is comming from bellow using position <code>top</code> animation</p>
+                    <img src="img/pinegrow-apple-monitor.png" width="300"/>
+                </div>
+            </div>
+            <div class="centered-content bg-light-cover vh100 page-3">
+                <div class="text-center">
+                    <i class="fas fa-angle-double-up display-big"></i>
+                    <h1>Page 3</h1>
+                    <p>Another page comming from below to make everything clear</p>
+                    <p>Now keep scrolling to get other pages...</p>
+                </div>
+            </div>
+            <div class="centered-content bg-vdark-cover vh100 page-4">
+                <div class="text-center">
+                    <i class="fas display-big fa-angle-double-left"></i>
+                    <h1>Page 4</h1>
+                    <p>This page is comming from the right side of the page using <code>left</code> property</p>
+                    <p>Now keep scrolling to get other pages...</p>
+                </div>
+            </div>
+            <div class="centered-content vh100 page-5 bg-vlight-cover">
+                <div class="text-center">
+                    <i class="fas display-big fa-angle-double-left"></i>
+                    <i class="fas display-big fa-angle-double-up"></i>
+                    <h1>Page 5</h1>
+                    <p>Remember you can do that for up to 10 pages</p>
+                    <p><b>Note:</b> you can use your favorite animation to show the page</p>
+                </div>
+            </div>
+            <div class="centered-content vh100 page-6 bg-blue-cover">
+                <div class="text-center">
+                    <i class="fas display-big fa-arrows-alt"></i>
+                    <h1>Page 6</h1>
+                    <p>Next page will shake at the end.</p>
+                </div>
+            </div>
+            <div class="centered-content vh100 page-7 bg-yellow-cover">
+                <div class="text-center">
+                    <h1>Thank You!</h1>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../pgia/lib/pgia_lib.js"></script>
+        <script type="text/javascript" src="../pgia/lib/pgia_dev.js"></script>
+    </body>
+</html>
