@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox;
+
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.container {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+.bg-cover {
+    background-image: url('https://pinegrow.com/pg4assets/img/blue.bck.jpg');
+    color: white;
+    background-size: cover;
+}
+
+.col-4 {
+    width: 32.3%;
+    float: left;
+    padding-right: 10px;
+}
