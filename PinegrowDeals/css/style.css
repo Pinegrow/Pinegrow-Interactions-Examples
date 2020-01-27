@@ -1,0 +1,24 @@
+#PinegrowDeals p {
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 6vw;
+    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#PinegrowDeals p span {
+    display: inline-block;
+}
+
+#PinegrowDeals .ball {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 5vw;
+    background-color: #ffffff;
+    position: absolute;
+    top: 7vw;
+}

@@ -1,0 +1,22 @@
+section {
+    width: 80%;
+    height: 400px;
+    margin: 40px auto;
+    background-color: #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1 {
+    display: none;
+}
+
+section.active h1 {
+    display: block;
+}
+
+section.active {
+    background-color: #a5d8ff;
+}

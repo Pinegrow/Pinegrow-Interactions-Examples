@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="../common/common.css">
+        <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
+    </head>
+    <body>
+        <header style="width: 80%; margin-top: 40px; margin-left: auto; margin-right: auto;">
+            <h1>About this example</h1>
+            <p>In this example we add class Active to sections when they come into scroll view. On scrolling in the opposite direction, class Active is removed.</p>
+            <p>By default, all sections have the Active class, so that complete information is displayed also when Javascript is disabled in the browser.</p>
+            <p>Notes about implementation:</p>
+            <ul>
+                <li>The first section contains the interaction, Apply to Many is used to copy these interactions to other sections.</li>
+                <li>Scroll Scene action is used to control the animation</li>
+                <li>Custom animation (edited in Timeline Editor) has two transforms:
+                    <ul>
+                        <li>The first one is a Set that removes class Active and displays the element.</li>
+                        <li>Tween that adds the class Active. Note that the animation engine tweens CSS properties of the class, for example background color.</li>
+                    </ul>
+                </li>
+                <li>Hide at Start action is used to hide the element, so that we don't see a flicker when the page loads and Active class is removed by the first Set in the animation.</li>
+                <li>We added bottom margin to the last section, so that it can reach the center scroll position.</li>
+            </ul>
+        </header>
+        <section data-pg-ia-scene='{"l":[{"a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"active","autoAlpha":"1"}},{"t":"tween","p":0,"d":0.99,"l":{"class.add":"active"}}]}]}}],"s":"onCenter"}' data-pg-ia-apply="$section" class="active" data-pg-ia-hide>
+            <h1>
+    Has "active" class</h1>
+        </section>
+        <section class="active">
+            <h1>
+    Has "active" class</h1>
+        </section>
+        <section class="active">
+            <h1>
+    Has "active" class</h1>
+        </section>
+        <section class="active" style="margin-bottom: 50vh;">
+            <h1>
+    Has "active" class</h1>
+        </section>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <div class="site-menu dark" data-pgc="site.menu" data-pgc-field="site.menu">
+            <div class="menu-toggle" data-pg-ia='{"l":[{"trg":"click","tcv":"menu-toggle-open","trev":"true","a":{"n":"","l":[{"t":"$.offpage-menu","l":[{"t":"set","p":0,"d":0,"l":{"x":"-260","autoAlpha":"0"}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":"1","x":"0"}}]},{"t":".top-bar","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"45","y":"6"}}]},{"t":".bottom-bar","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"-45","y":"-6"}}]},{"t":".middle-bar","l":[{"t":"tween","p":0,"d":0.18,"l":{"autoAlpha":"0"}}]},{"t":"$.offpage-menu","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"menu-toggle-open"}},{"t":"tween","p":0,"d":0.5,"l":{"class.add":"menu-toggle-open"}}]}]}}]}'>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </div>
+            <div class="offpage-menu" data-pg-ia-hide>
+                <h2>Examples of Pinegrow Interactions</h2>
+                <p>Open these examples in Pinegrow with Open URL and explore how they're done.</p>
+                <ul>
+                    <li>
+                        <a href="../PopoutMenu/index.html">Popout Menu</a>
+                    </li>
+                    <li>
+                        <a href="../ScrollProgressBar/index.html">Scroll Bar Progress</a>
+                    </li>
+                    <li>
+                        <a href="../PinegrowDeals/index.html">Pinegrow Deals</a>
+                    </li>
+                    <li>
+                        <a href="../SiteMenu/index.html">Site Menu</a>
+                    </li>
+                    <li>
+                        <a href="../SoundToy/index.html">Sound Toy</a>
+                    </li>
+                    <li class="hide">
+                        <a href="../VideoScrollScenes/index.html">Video Scroll Scenes</a>
+                    </li>
+                    <li>
+                        <a href="../RotatingCard/index.html">Rotating Card</a>
+                    </li>
+                    <li>
+                        <a href="../ScrollingImageList/index.html">Scrolling Image List</a>
+                    </li>
+                    <li>
+                        <a href="../AddAndRemoveClassesOnScroll/index.html">Add &amp; Remove Classes w. Scroll</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../pgia/lib/pgia.js"></script>
+    </body>
+</html>

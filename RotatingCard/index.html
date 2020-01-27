@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Credit Card Rotation</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
+        <link rel="stylesheet" href="../common/common.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container vh100 bg-cover">
+            <div class="card-container" data-pg-ia='{"l":[{"trg":"mousemove","mm_a":"x","mm_r":"50","a":{"n":"","l":[{"t":".image","l":[{"t":"set","p":0,"d":0,"l":{"rotationY":"-17"}},{"t":"set","p":0,"d":0,"l":{"boxShadow":"rgba(0, 0, 0, 0.4) 10px 10px 10px -5px"}},{"t":"tween","p":0,"d":1,"l":{"rotationY":"17"},"e":"Linear.easeNone"},{"t":"tween","p":0,"d":1,"l":{"boxShadow":"rgba(0, 0, 0, 0.4) -10px 10px 10px -5px"}}]},{"t":".card-light","l":[{"t":"set","p":0,"d":0,"l":{"right":"-80px"}},{"t":"tween","p":0,"d":1,"l":{"right":"180"}}]}]}},{"trg":"mousemove","mm_a":"y","mm_r":"50","a":{"n":"","l":[{"t":".image","l":[{"t":"set","p":0,"d":0,"l":{"rotationX":"17"}},{"t":"tween","p":0,"d":1,"l":{"rotationX":"-17"},"e":"Linear.easeNone"}]},{"t":".card-light","l":[{"t":"set","p":0,"d":0,"l":{"top":"60"}},{"t":"tween","p":0,"d":1,"l":{"top":"-14"}}]}]}}]}'>
+                <div class="image-container">
+                    <div class="image"></div>
+                    <div class="card-light" style="transform: translate3d(0,    0, 100px);"></div>
+                </div>
+            </div>
+        </div>
+        <div class="site-menu" data-pgc="site.menu" data-pgc-field="site.menu">
+            <div class="menu-toggle" data-pg-ia='{"l":[{"trg":"click","tcv":"menu-toggle-open","trev":"true","a":{"n":"","l":[{"t":"$.offpage-menu","l":[{"t":"set","p":0,"d":0,"l":{"x":"-260","autoAlpha":"0"}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":"1","x":"0"}}]},{"t":".top-bar","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"45","y":"6"}}]},{"t":".bottom-bar","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"-45","y":"-6"}}]},{"t":".middle-bar","l":[{"t":"tween","p":0,"d":0.18,"l":{"autoAlpha":"0"}}]},{"t":"$.offpage-menu","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"menu-toggle-open"}},{"t":"tween","p":0,"d":0.5,"l":{"class.add":"menu-toggle-open"}}]}]}}]}'>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </div>
+            <div class="offpage-menu" data-pg-ia-hide>
+                <h2>Examples of Pinegrow Interactions</h2>
+                <p>Open these examples in Pinegrow with Open URL and explore how they're done.</p>
+                <ul>
+                    <li>
+                        <a href="../PopoutMenu/index.html">Popout Menu</a>
+                    </li>
+                    <li>
+                        <a href="../ScrollProgressBar/index.html">Scroll Bar Progress</a>
+                    </li>
+                    <li>
+                        <a href="../PinegrowDeals/index.html">Pinegrow Deals</a>
+                    </li>
+                    <li>
+                        <a href="../SiteMenu/index.html">Site Menu</a>
+                    </li>
+                    <li>
+                        <a href="../SoundToy/index.html">Sound Toy</a>
+                    </li>
+                    <li class="hide">
+                        <a href="../VideoScrollScenes/index.html">Video Scroll Scenes</a>
+                    </li>
+                    <li>
+                        <a href="">Rotating Card</a>
+                    </li>
+                    <li>
+                        <a href="../ScrollingImageList/index.html">Scrolling Image List</a>
+                    </li>
+                    <li>
+                        <a href="../AddAndRemoveClassesOnScroll/index.html">Add &amp; Remove Classes w. Scroll</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="../pgia/lib/pgia.js"></script>
+    </body>
+</html>

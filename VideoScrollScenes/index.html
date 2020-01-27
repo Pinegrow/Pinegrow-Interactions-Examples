@@ -9,8 +9,43 @@
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="../common/common.css">
         <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div id="VideoScrollScenes" class="pgia-example">
+            <section data-pg-ia-scene='{"d":"100%","s":"onCenter","l":[{"a":{"n":"","l":[{"t":"video","l":[{"t":"tween","p":0,"d":2,"l":{"media.playing":""}}]}]}},{"t":".info","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"filter":"blur(10px)","autoAlpha":"0"}},{"t":"tween","p":0,"d":0.99,"l":{"filter":"blur(0)","autoAlpha":"1"}}]}]},"p":"time"}]}'>
+                <video poster="media/Pexels-Videos-1448735.jpg" src="http://download.pinegrow.com/videos/Pexels%20Videos%201448735.mp4"></video>
+                <div class="info" data-pg-ia-hide>
+                    <h1>Deep into the forest</h1>
+                    <p class="subtitle">The best pine trees can be found away from the beaten paths.</p>
+                    <div class="content"></div>
+                </div>
+            </section>
+            <section data-pg-ia-scene='{"d":"200px","s":"onEnter","pin":"true","l":[{"a":{"n":"","l":[{"t":"video","l":[{"t":"tween","p":0,"d":2,"l":{"media.playing":""}}]}]}},{"t":".info","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"x":"-470","autoAlpha":"1"}},{"t":"tween","p":0,"d":1,"l":{"x":"0"}}]}]},"s":"20","p":"time"}]}' style=" 
+align-items: flex-start;
+">
+                <video src="http://download.pinegrow.com/videos/Pexels%20Videos%202063228.mp4" poster="media/Pexels%20Videos%202063228.jpg"></video>
+                <div class="info" data-pg-ia-hide>
+                    <h1>The land of winter</h1>
+                    <p class="subtitle">Wow, how many pine trees!</p>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet.</p>
+                    </div>
+                </div>
+            </section>
+            <section data-pg-ia-scene='{"s":"onEnter","pin":"true","l":[{"a":{"n":"","l":[{"t":"video","l":[{"t":"tween","p":0,"d":2,"l":{"media.playing":""}}]}]}},{"t":".info","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"x":"500","autoAlpha":"1"}},{"t":"tween","p":0,"d":1,"l":{"x":"0"}}]}]},"p":"time"}]}' style=" 
+align-items: flex-end;
+">
+                <video src="http://download.pinegrow.com/videos/Pexels%20Videos%203641.mp4" poster="media/Pexels%20Videos%203641.jpg"></video>
+                <div class="info" data-pg-ia-hide>
+                    <h1>The sunset</h1>
+                    <p class="subtitle">How does the sun know when it is the time to go to sleep?</p>
+                    <div class="content">
+                        <p>Every day, without fail and without using a watch, the sun knows when the night is approaching and slides down to sleep right before it gets dark.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
         <div class="site-menu" data-pgc="site.menu" data-pgc-field="site.menu">
             <div class="menu-toggle" data-pg-ia='{"l":[{"trg":"click","tcv":"menu-toggle-open","trev":"true","a":{"n":"","l":[{"t":"$.offpage-menu","l":[{"t":"set","p":0,"d":0,"l":{"x":"-260","autoAlpha":"0"}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":"1","x":"0"}}]},{"t":".top-bar","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"45","y":"6"}}]},{"t":".bottom-bar","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"-45","y":"-6"}}]},{"t":".middle-bar","l":[{"t":"tween","p":0,"d":0.18,"l":{"autoAlpha":"0"}}]},{"t":"$.offpage-menu","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"menu-toggle-open"}},{"t":"tween","p":0,"d":0.5,"l":{"class.add":"menu-toggle-open"}}]}]}}]}'>
                 <span class="icon-bar top-bar"></span>
@@ -28,50 +63,28 @@
                         <a href="../ScrollProgressBar/index.html">Scroll Bar Progress</a>
                     </li>
                     <li>
+                        <a href="../PinegrowDeals/index.html">Pinegrow Deals</a>
+                    </li>
+                    <li>
                         <a href="../SiteMenu/index.html">Site Menu</a>
                     </li>
                     <li>
                         <a href="../SoundToy/index.html">Sound Toy</a>
                     </li>
-                    <li>
+                    <li class="hide">
                         <a href="">Video Scroll Scenes</a>
+                    </li>
+                    <li>
+                        <a href="../RotatingCard/index.html">Rotating Card</a>
+                    </li>
+                    <li>
+                        <a href="../ScrollingImageList/index.html">Scrolling Image List</a>
+                    </li>
+                    <li>
+                        <a href="../AddAndRemoveClassesOnScroll/index.html">Add &amp; Remove Classes w. Scroll</a>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div id="VideoScrollScenes" class="pgia-example">
-            <section data-pg-ia-scene='{"d":"100%","s":"onCenter","l":[{"a":{"n":"","l":[{"t":"video","l":[{"t":"tween","p":0,"d":2,"l":{"media.playing":""}}]}]}},{"t":".info","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"filter":"blur(10px)","autoAlpha":"0"}},{"t":"tween","p":0,"d":0.99,"l":{"filter":"blur(0)","autoAlpha":"1"}}]}]},"p":"time"}]}'>
-                <video src="media/Pexels%20Videos%201448735.mp4" poster="media/Pexels-Videos-1448735.jpg"></video>
-                <div class="info" data-pg-ia-hide>
-                    <h1>Deep into the forest</h1>
-                    <p class="subtitle">The best pine trees can be found away from the beaten paths.</p>
-                    <div class="content"></div>
-                </div>
-            </section>
-            <section data-pg-ia-scene='{"d":"200px","s":"onEnter","pin":"true","l":[{"a":{"n":"","l":[{"t":"video","l":[{"t":"tween","p":0,"d":2,"l":{"media.playing":""}}]}]}},{"t":".info","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"x":"-470","autoAlpha":"1"}},{"t":"tween","p":0,"d":1,"l":{"x":"0"}}]}]},"s":"20","p":"time"}]}' style=" 
-align-items: flex-start;
-">
-                <video src="media/Pexels%20Videos%202063228.mp4" poster="media/Pexels%20Videos%202063228.jpg"></video>
-                <div class="info" data-pg-ia-hide>
-                    <h1>The land of winter</h1>
-                    <p class="subtitle">Wow, how many pine trees!</p>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
-                    </div>
-                </div>
-            </section>
-            <section data-pg-ia-scene='{"s":"onEnter","pin":"true","l":[{"a":{"n":"","l":[{"t":"video","l":[{"t":"tween","p":0,"d":2,"l":{"media.playing":""}}]}]}},{"t":".info","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"x":"500","autoAlpha":"1"}},{"t":"tween","p":0,"d":1,"l":{"x":"0"}}]}]},"p":"time"}]}' style=" 
-align-items: flex-end;
-">
-                <video src="media/Pexels%20Videos%203641.mp4" poster="media/Pexels%20Videos%203641.jpg"></video>
-                <div class="info" data-pg-ia-hide>
-                    <h1>The sunset</h1>
-                    <p class="subtitle">How does the sun know when it is the time to go to sleep?</p>
-                    <div class="content">
-                        <p>Every day, without fail and without using a watch, the sun knows when the night is approaching and slides down to sleep right before it gets dark.</p>
-                    </div>
-                </div>
-            </section>
         </div>
         <script type="text/javascript" src="../pgia/lib/pgia.js"></script>
     </body>
