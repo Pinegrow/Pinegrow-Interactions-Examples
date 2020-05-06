@@ -1,0 +1,186 @@
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+a {
+  color: #bf8e0e; }
+  a:hover {
+    color: #ffffff;
+    text-decoration: none; }
+
+.btn-24k {
+  color: #bf8e0e;
+  background-color: transparent;
+  border-radius: 0;
+  font-weight: 600;
+  border: 2px solid #bf8e0e; }
+  .btn-24k:hover {
+    color: #ffffff;
+    background-color: #bf8e0e; }
+
+.btn-light {
+  color: #bf8e0e;
+  background-color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 0;
+  border: none; }
+  .btn-light:hover {
+    color: #ffffff;
+    background-color: #bf8e0e; }
+
+.btn-dark {
+  color: white;
+  background-color: #222;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 0;
+  border: none; }
+  .btn-dark:hover {
+    color: #ffffff;
+    background-color: #bf8e0e; }
+
+.page-progress-bar {
+  height: 10px;
+  width: 0%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #bf8e0e;
+  z-index: 1031; }
+  .navbar-dark .navbar-brand {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif; }
+    .navbar-dark .navbar-brand:hover {
+      color: #bf8e0e; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #bf8e0e; }
+
+.top-banner {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  color: #ffffff;
+  overflow: hidden; }
+  .top-banner ~ * {
+    position: relative; }
+  .top-banner__bgImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.tourDates-table {
+  color: white;
+  background-color: transparent;
+  font-size: 0.8rem; }
+  .tourDates-table th, .tourDates-table td {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    vertical-align: middle; }
+  .tourDates-table .venue {
+    font-weight: bold; }
+  .tourDates-table .btn-24k {
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    text-transform: uppercase; }
+  .tourDates-table .rsvp-link {
+    margin-left: 10px;
+    font-weight: bold; }
+
+.album-link-block {
+  -webkit-perspective: 1500px;
+          perspective: 1500px;
+  overflow: hidden; }
+    .album-link-block > .row > * {
+      position: static; }
+    .album-link-block > .row > *:nth-child(3n+1) {
+      padding-top: 100px; }
+    .album-link-block > .row > *:nth-child(3n+2) {
+      padding-top: 200px; }
+
+.player-block {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transform: rotateX(70deg);
+          transform: rotateX(70deg);
+  height: 0;
+  opacity: 0; }
+  .player-block__vinyl {
+    height: auto;
+    width: 100%; }
+  .player-block__tonearm {
+    position: absolute;
+    right: -60%;
+    top: -10%; }
+  .player-block audio.active ~ .player-block__vinyl {
+    -webkit-animation: rotate 5s linear infinite;
+            animation: rotate 5s linear infinite; }
+
+.album-link {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-align: left;
+  color: white;
+  font-weight: 600; }
+  .album-link figure {
+    display: block;
+    position: relative; }
+  .album-link__cover {
+    width: 80%;
+    height: auto;
+    position: relative; }
+  .album-link__vinyl {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    right: 10%;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .album-link:hover .album-link__vinyl {
+      right: 0%; }
+
+footer {
+  background-color: black;
+  color: white; }
+  .social-links .nav-link {
+    font-size: 2rem; }
+
+.copyright-text {
+  color: #444;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.8rem; }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
