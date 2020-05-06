@@ -86,7 +86,7 @@ a {
   color: white;
   background-color: transparent;
   font-size: 0.8rem; }
-  .tourDates-table th {
+  .tourDates-table th, .tourDates-table td {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     vertical-align: middle; }
@@ -127,7 +127,7 @@ a {
     position: absolute;
     right: -60%;
     top: -10%; }
-  .player-block audio.active ~ .player-block__vinyl {
+  .player-block.playing .player-block__vinyl {
     -webkit-animation: rotate 5s linear infinite;
             animation: rotate 5s linear infinite; }
 

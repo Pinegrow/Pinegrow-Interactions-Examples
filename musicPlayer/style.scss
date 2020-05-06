@@ -178,7 +178,7 @@ a {
         top: -10%;
     }
 
-    audio.active~.player-block__vinyl {
+    &.playing .player-block__vinyl {
         animation: rotate 5s linear infinite;
     }
 }
