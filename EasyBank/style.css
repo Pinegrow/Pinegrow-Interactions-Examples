@@ -1,0 +1,95 @@
+body {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 18px;
+  color: #999;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none;
+  color: #9698a6; }
+  a:hover {
+    text-decoration: none;
+    color: #2bb7da; }
+
+.btn-custom {
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), color-stop(#2bb7da), to(#31d35c));
+  background: -webkit-linear-gradient(left, #31d35c, #2bb7da, #31d35c);
+  background: -o-linear-gradient(left, #31d35c, #2bb7da, #31d35c);
+  background: linear-gradient(90deg, #31d35c, #2bb7da, #31d35c);
+  color: white;
+  font-weight: 400;
+  padding: 0.75rem 2.5rem;
+  background-position: left center;
+  background-size: 200%;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+  .btn-custom:hover {
+    color: white;
+    opacity: 0.8;
+    background-position: right center; }
+
+.bg-pattern {
+  position: absolute;
+  top: -37%;
+  right: 20%;
+  bottom: 0;
+  height: 150vh;
+  width: 150vh;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  min-width: 1400px;
+  min-height: 1400px; }
+
+.floating-phones {
+  position: absolute;
+  top: -8%;
+  right: 20%;
+  height: 125vh;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%); }
+  .blog-post a {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform: perspective(1000px);
+            transform: perspective(1000px);
+    display: block;
+    color: #2d314d; }
+    .blog-post a:hover {
+      color: #2bb7da; }
+    .blog-post a > img {
+      height: 200px;
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: center;
+         object-position: center; }
+
+.section-features {
+  background-color: #f3f4f6; }
+
+.section-blog {
+  background-color: #fafafa; }
+
+footer {
+  background-color: #2d314d; }
+  .social-links a {
+    margin-right: 5px; }
+    .social-links a:hover {
+      opacity: 0.7; }
+  .site-links a {
+    display: block;
+    margin-bottom: 5px; }
+
+.section-hero {
+  background-color: #fafafa; }
+    .navbar-light .navbar-nav .nav-link {
+      color: #9698a6;
+      font-size: 16px;
+      margin: 0 5px; }
+      .navbar-light .navbar-nav .nav-link:hover {
+        color: #2bb7da; }
+  .navbar-light .btn-custom {
+    padding: 0.5rem 1.7rem; }
