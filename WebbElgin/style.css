@@ -1,0 +1,253 @@
+body {
+  font-family: 'Maven Pro', sans-serif;
+  color: #555;
+  font-size: 24px;
+  font-weight: 500;
+  overflow-x: hidden; }
+
+a {
+  color: #2d527c; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold; }
+
+.btn-custom {
+  background-color: #2d527c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 5px; }
+  .btn-custom:hover {
+    background-color: #e6e6e6; }
+
+.top-banner {
+  position: relative; }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #2d527c; }
+  .navbar-light .navbar-brand {
+    font-size: 1.75rem;
+    color: #2d527c;
+    line-height: 1;
+    font-weight: 600; }
+
+.bg-cloud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none; }
+
+.overlay-cloud {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20%;
+  width: 100%;
+  min-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+  z-index: 1; }
+
+.banner-content {
+  padding-top: 100px;
+  padding-bottom: 300px;
+  position: relative; }
+  .banner-content .overlay-plane {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 70%; }
+
+.section-padding {
+  padding-top: 125px;
+  padding-bottom: 100px; }
+
+.main-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: right; }
+  .main-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #2d527c;
+    margin-top: 10px;
+    margin-left: auto; }
+
+.section-title {
+  font-weight: bold;
+  color: #2d527c;
+  color: black;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 60px; }
+  .section-title span {
+    /* font-size: 300% */
+    bottom: 0;
+    position: absolute;
+    color: #ededed;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 100%;
+    width: 100%;
+    z-index: -1; }
+
+a.icon-link {
+  display: block;
+  padding: 60px 25px;
+  color: black;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: white;
+  height: 100%;
+  -webkit-box-shadow: 0 0 2px #ccc;
+          box-shadow: 0 0 2px #ccc;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg); }
+  a.icon-link img {
+    max-height: 90px;
+    margin: auto;
+    margin-bottom: 35px; }
+  a.icon-link h4 {
+    padding: 0 1rem; }
+  a.icon-link p {
+    color: #888888;
+    font-size: 1rem;
+    margin-top: 1rem; }
+  a.icon-link:hover {
+    color: #2d527c;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 5px #333;
+            box-shadow: 0 0 5px #333; }
+
+.products-section {
+  position: relative;
+  background: -webkit-linear-gradient(bottom, #2d527c 0%, rgba(45, 82, 124, 0.1) 75%, rgba(255, 255, 255, 0) 95%);
+  margin-bottom: 100px; }
+  .products-section:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    bottom: -98px;
+    left: 0;
+    z-index: 1;
+    background: -webkit-gradient(linear, right bottom, left top, color-stop(49.9%, transparent), color-stop(50.1%, #2d527c));
+    background: -webkit-linear-gradient(bottom right, transparent 49.9%, #2d527c 50.1%);
+    background: -o-linear-gradient(bottom right, transparent 49.9%, #2d527c 50.1%);
+    background: linear-gradient(to top left, transparent 49.9%, #2d527c 50.1%); }
+
+.carousel-item {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 20px 40px; }
+
+.carousel-caption {
+  position: static;
+  color: #888888;
+  text-align: left; }
+  .carousel-caption h3 {
+    text-align: center;
+    margin-bottom: 1rem; }
+  .carousel-caption h3,
+  .carousel-caption h5 {
+    color: black;
+    font-weight: 600; }
+  .carousel-caption p {
+    font-size: 1.125rem; }
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  opacity: 1; }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 35px;
+  height: 35px;
+  background-color: #2d527c;
+  border-radius: 50%;
+  background-size: 50%; }
+
+.carousel-control-next {
+  -webkit-transform: translateX(40%);
+      -ms-transform: translateX(40%);
+          transform: translateX(40%); }
+
+.carousel-control-prev {
+  -webkit-transform: translateX(-40%);
+      -ms-transform: translateX(-40%);
+          transform: translateX(-40%); }
+
+footer {
+  background-color: #2d527c;
+  position: relative;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+  font-size: 1.125rem;
+  font-weight: 400; }
+  footer::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    top: -98px;
+    left: 0;
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(49.9%, transparent), color-stop(50.1%, #2d527c));
+    background: -webkit-linear-gradient(top left, transparent 49.9%, #2d527c 50.1%);
+    background: -o-linear-gradient(top left, transparent 49.9%, #2d527c 50.1%);
+    background: linear-gradient(to bottom right, transparent 49.9%, #2d527c 50.1%); }
+  footer a {
+    color: white; }
+    footer a:hover {
+      color: #ddd; }
+  footer hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #eee; }
+  form.subscribe-form .input-group {
+    -webkit-box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    border-radius: 50px; }
+  form.subscribe-form input[type="email"] {
+    border-radius: 50px;
+    padding-left: 30px; }
+  form.subscribe-form .input-group-btn {
+    z-index: 5; }
+    form.subscribe-form .input-group-btn .btn {
+      border-radius: 50px;
+      margin-left: -20px;
+      background-color: #555;
+      color: white;
+      font-weight: 600;
+      padding-right: 30px;
+      padding-left: 30px; }
+      form.subscribe-form .input-group-btn .btn:hover {
+        color: black;
+        background-color: #e6e6e6; }
+  .social-links a {
+    margin-left: 10px; }
+    .social-links a:hover {
+      opacity: 0.6; }
