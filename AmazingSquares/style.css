@@ -8,7 +8,10 @@
     background-color: #84919c;
     box-shadow: 0.4em 0.4em rgba(0, 0, 0, 0.12);
     font-size: 1.1rem;
-    transition: all 0.4s ease;
+}
+
+.square:hover {
+    box-shadow: none;
 }
 
 @media (min-width:992px) {
@@ -48,8 +51,11 @@ body {
     box-shadow: 0.4em 0.4em rgba(234, 72, 38, 0.12);
     grid-area: title;
     font-size: 1.7rem;
-    transition: all 0.4s ease;
     background: linear-gradient(135deg, rgb(255, 52, 0) 0%, rgb(184, 41, 5) 100%);
+}
+
+.mainsquare:hover {
+    box-shadow: none;
 }
 
 @media (min-width:992px) {
@@ -186,4 +192,8 @@ body {
 }
 
 .nogrid .gallery {
+}
+
+.fade-up-block {
+    opacity: 0;
 }
