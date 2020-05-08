@@ -1,0 +1,189 @@
+.square {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.86);
+    background-color: #84919c;
+    box-shadow: 0.4em 0.4em rgba(0, 0, 0, 0.12);
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+}
+
+@media (min-width:992px) {
+    .square {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:1600px) {
+    .square {
+        font-size: 2rem;
+    }
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+.mainsquare {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #ff3300;
+    color: #ffffff;
+    text-align: left;
+    box-shadow: 0.4em 0.4em rgba(234, 72, 38, 0.12);
+    grid-area: title;
+    font-size: 1.7rem;
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, rgb(255, 52, 0) 0%, rgb(184, 41, 5) 100%);
+}
+
+@media (min-width:992px) {
+    .mainsquare {
+        padding: 40px;
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width:1200px) {
+    .mainsquare {
+        padding: 40px;
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width:1600px) {
+    .mainsquare {
+        font-size: 3.4rem;
+    }
+}
+
+.text {
+    column-width: 300px;
+    column-gap: 30px;
+    column-fill: auto;
+
+    /* columns: 3 */
+    grid-area: text;
+}
+
+@media (min-width:992px) {
+    .text {
+        column-width: 300px;
+        column-gap: 20px;
+        column-fill: auto;
+
+        /* columns: 3 */
+        grid-area: text;
+    }
+}
+
+@media (min-width:1600px) {
+    .text {
+        column-gap: 50px;
+        column-fill: auto;
+
+        /* columns: 3 */
+        grid-area: text;
+        columns: 350px auto;
+        column-rule: 1px solid #cdcdcd;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 10px 100px 100px 1fr 10px;
+    grid-template-rows: 220px 24px auto 100px 100px;
+    grid-template-areas: '. title title . .' '. . . . .' '. text text text .' '. sq1 . . .' '. sq2 sq3 . .';
+    grid-gap: 20px;
+}
+
+@media (min-width:992px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 120px 120px 120px 120px 2fr 100px;
+        grid-template-rows: 120px 120px 120px 120px fit-content(100%);
+        grid-template-areas: 'title title sq1 . . .' 'title title . sq2 . .' '. . text text text .' '. sq3 text text text .' '. . text text text .';
+        grid-gap: 50px;
+    }
+}
+
+@media (min-width:1600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 160px 160px 160px 160px 5fr 1fr;
+        grid-template-rows: 160px 160px 200px 160px fit-content(100%) 100px;
+        grid-template-areas: 'title title sq1 . . .' 'title title . sq2 . .' '. . text text text .' '. sq3 text text text .' '. . text text text .' '. . . . . .';
+        grid-gap: 60px;
+    }
+}
+
+.nogrid body {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nogrid .square {
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    margin-right: 12px;
+    min-width: 80px;
+    min-height: 80px;
+    font-size: 18px;
+}
+
+.nogrid .text {
+    margin-bottom: 50px;
+}
+
+.nogrid .mainsquare {
+    height: 180px;
+    margin-bottom: 30px;
+    min-width: 180px;
+    min-height: 180px;
+    width: 180px;
+    font-size: 26px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 20px;
+    grid-auto-rows: 120px;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.gallery > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text > img {
+    margin-bottom: 10px;
+}
+
+.nogrid .gallery > img {
+    width: 120px;
+    margin-bottom: 5px;
+    margin-right: 1px;
+}
+
+.nogrid .gallery {
+}
