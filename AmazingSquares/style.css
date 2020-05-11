@@ -10,10 +10,6 @@
     font-size: 1.1rem;
 }
 
-.square:hover {
-    box-shadow: none;
-}
-
 @media (min-width:992px) {
     .square {
         font-size: 1.5rem;
@@ -52,10 +48,6 @@ body {
     grid-area: title;
     font-size: 1.7rem;
     background: linear-gradient(135deg, rgb(255, 52, 0) 0%, rgb(184, 41, 5) 100%);
-}
-
-.mainsquare:hover {
-    box-shadow: none;
 }
 
 @media (min-width:992px) {
@@ -194,6 +186,3 @@ body {
 .nogrid .gallery {
 }
 
-.fade-up-block {
-    opacity: 0;
-}
