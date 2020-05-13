@@ -1,10 +1,9 @@
-$color-dark-blue: hsl(233, 26%, 24%);
-$color-lime-green: hsl(136, 65%, 51%);
-$color-bright-cyan: hsl(192, 70%, 51%);
-$color-grayish-blue: hsl(233, 8%, 62%);
-$color-light-grayish-blue: hsl(220, 16%, 96%);
-$color-very-light-gray: hsl(0, 0%, 98%);
-$color-white: hsl(0, 0%, 100%);
+$color-dark-blue: #1f2235;
+$color-grayish-blue: #9698a6;
+$color-light-grayish-blue: #f3f4f6;
+$color-very-light-gray: #fafafa;
+$color-orange: #ff9729;
+$color-light-orange: #ffb86d;
 
 body {
     font-family: 'Public Sans', sans-serif;
@@ -19,12 +18,12 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: $color-bright-cyan;
+        color: $color-orange;
     }
 }
 
 .btn-custom {
-    background: linear-gradient(90deg, $color-lime-green, $color-bright-cyan, $color-lime-green);
+    background: linear-gradient(90deg, $color-orange, $color-light-orange, $color-orange);
     color: white;
 
     // font-size: 20px;
@@ -38,8 +37,31 @@ a {
         color: white;
         opacity: 0.8;
         background-position: right center;
+    }
+}
 
-        // background: linear-gradient(90deg, $color-bright-cyan, $color-lime-green);
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: $color-grayish-blue;
+            font-size: 16px;
+            margin: 0 5px;
+
+            &:hover {
+                color: $color-orange;
+            }
+        }
+    }
+
+    .btn-custom {
+        padding: 0.5rem 1.7rem;
+    }
+}
+
+.navbar-brand {
+    img {
+        height: 30px;
+        width: auto;
     }
 }
 
@@ -71,7 +93,7 @@ a {
         color: $color-dark-blue;
 
         &:hover {
-            color: $color-bright-cyan;
+            color: $color-orange;
         }
 
         >img {
@@ -87,6 +109,21 @@ a {
     background-color: $color-light-grayish-blue;
 }
 
+.features-post {
+    .icon {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: $color-orange;
+        background: linear-gradient(90deg, $color-orange, $color-light-orange 120%);
+        color: white;
+        text-align: center;
+        line-height: 80px;
+        font-size: 1.75rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
 .section-blog {
     background-color: $color-very-light-gray;
 }
@@ -98,9 +135,10 @@ footer {
 .social-links {
     a {
         margin-right: 5px;
+        color: white;
 
         &:hover {
-            opacity: 0.7;
+            color: $color-orange;
         }
     }
 }
@@ -116,20 +154,7 @@ footer {
     background-color: $color-very-light-gray;
 }
 
-.navbar-light {
-    .navbar-nav {
-        .nav-link {
-            color: $color-grayish-blue;
-            font-size: 16px;
-            margin: 0 5px;
-
-            &:hover {
-                color: $color-bright-cyan;
-            }
-        }
-    }
-
-    .btn-custom {
-        padding: 0.5rem 1.7rem;
-    }
+img.footer-logo {
+    height: 30px;
+    width: auto;
 }
