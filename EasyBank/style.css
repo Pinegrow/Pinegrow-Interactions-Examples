@@ -37,7 +37,7 @@ a {
   .navbar-light .btn-custom {
     padding: 0.5rem 1.7rem; }
   .navbar-brand img {
-    height: 30px;
+    height: 35px;
     width: auto; }
 
 .bg-pattern {
@@ -113,5 +113,5 @@ footer {
   background-color: #fafafa; }
 
 img.footer-logo {
-  height: 30px;
+  height: 35px;
   width: auto; }
