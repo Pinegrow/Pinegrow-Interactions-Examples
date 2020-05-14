@@ -67,14 +67,10 @@ a {
 
 .bg-pattern {
     position: absolute;
-    top: -37%;
+    top: -15%;
     right: 20%;
-    bottom: 0;
-    height: 150vh;
-    width: 150vh;
+    height: 130vh;
     transform: translateX(50%);
-    min-width: 1400px;
-    min-height: 1400px
 }
 
 .floating-phones {
@@ -83,6 +79,12 @@ a {
     right: 20%;
     height: 125vh;
     transform: translateX(50%)
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1;
 }
 
 .blog-post {
@@ -157,4 +159,42 @@ footer {
 img.footer-logo {
     height: 35px;
     width: auto;
+}
+
+@media (max-width:1199px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:991px) {
+    .floating-phones {
+        top: 8%;
+        height: 85vh;
+    }
+
+    .bg-pattern {
+        top: -5%;
+        right: 0%;
+        height: 110vh;
+    }
+}
+
+@media (max-width:767px) {
+    .floating-phones {
+        top: 18%;
+        height: 65vh;
+    }
+
+    .bg-pattern {
+        top: -15%;
+        right: 0%;
+        height: 110vh;
+    }
+}
+
+@media (max-width:575px) {
+    .floating-phones {
+        height: 55vh;
+    }
 }
