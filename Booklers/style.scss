@@ -65,20 +65,28 @@ a {
     }
 }
 
+.section-hero {
+    background-color: $color-very-light-gray;
+    height: 100vh;
+    max-height: 900px;
+}
+
 .bg-pattern {
     position: absolute;
     top: -15%;
-    right: 20%;
+    right: 15%;
     height: 130vh;
     transform: translateX(50%);
+    max-height: 1150px;
 }
 
 .floating-phones {
     position: absolute;
-    top: -8%;
+    top: -5%;
     right: 20%;
     height: 125vh;
-    transform: translateX(50%)
+    transform: translateX(50%);
+    max-height: 1100px;
 }
 
 .main-title {
@@ -152,10 +160,6 @@ footer {
     }
 }
 
-.section-hero {
-    background-color: $color-very-light-gray;
-}
-
 img.footer-logo {
     height: 35px;
     width: auto;
@@ -167,23 +171,37 @@ img.footer-logo {
     }
 }
 
-@media (max-width:991px) {
+@media (max-width:1200px) {
     .floating-phones {
-        top: 8%;
-        height: 85vh;
+        top: -2%;
+        max-height: 1000px;
     }
 
     .bg-pattern {
-        top: -5%;
+        top: -10%;
+        right: 5%;
+        max-height: 1050px;
+    }
+}
+
+@media (max-width:991px) {
+    .floating-phones {
+        top: 5%;
+        max-height: 780px;
+        right: 4%;
+    }
+
+    .bg-pattern {
+        top: -8%;
         right: 0%;
-        height: 110vh;
+        max-height: 680px;
     }
 }
 
 @media (max-width:767px) {
     .floating-phones {
-        top: 18%;
-        height: 65vh;
+        top: 20%;
+        height: 60vh;
     }
 
     .bg-pattern {

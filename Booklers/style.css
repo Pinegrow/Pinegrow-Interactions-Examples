@@ -40,23 +40,30 @@ a {
     height: 35px;
     width: auto; }
 
+.section-hero {
+  background-color: #fafafa;
+  height: 100vh;
+  max-height: 900px; }
+
 .bg-pattern {
   position: absolute;
   top: -15%;
-  right: 20%;
+  right: 15%;
   height: 130vh;
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
-          transform: translateX(50%); }
+          transform: translateX(50%);
+  max-height: 1150px; }
 
 .floating-phones {
   position: absolute;
-  top: -8%;
+  top: -5%;
   right: 20%;
   height: 125vh;
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
-          transform: translateX(50%); }
+          transform: translateX(50%);
+  max-height: 1100px; }
 
 .main-title {
   font-size: 3.5rem;
@@ -110,9 +117,6 @@ footer {
     display: block;
     margin-bottom: 5px; }
 
-.section-hero {
-  background-color: #fafafa; }
-
 img.footer-logo {
   height: 35px;
   width: auto; }
@@ -121,19 +125,29 @@ img.footer-logo {
   .main-title {
     font-size: 2.5rem; } }
 
+@media (max-width: 1200px) {
+  .floating-phones {
+    top: -2%;
+    max-height: 1000px; }
+  .bg-pattern {
+    top: -10%;
+    right: 5%;
+    max-height: 1050px; } }
+
 @media (max-width: 991px) {
   .floating-phones {
-    top: 8%;
-    height: 85vh; }
+    top: 5%;
+    max-height: 780px;
+    right: 4%; }
   .bg-pattern {
-    top: -5%;
+    top: -8%;
     right: 0%;
-    height: 110vh; } }
+    max-height: 680px; } }
 
 @media (max-width: 767px) {
   .floating-phones {
-    top: 18%;
-    height: 65vh; }
+    top: 20%;
+    height: 60vh; }
   .bg-pattern {
     top: -15%;
     right: 0%;
