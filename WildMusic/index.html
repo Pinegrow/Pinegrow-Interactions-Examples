@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Blank Template for Bootstrap</title>
+        <title>WildMusic - template for Adding Web Interactions | Pinegrow Web Editor</title>
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.4.0/fonts/remixicon.css" rel="stylesheet">
@@ -17,12 +17,42 @@
     </head>
     <body data-pg-ia-scene='{"d":"4500px","s":"onCenter","l":[{"t":".go-to-top","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"0"}}]}]},"s":"100%","p":"scroll"}]}'>
         <main class="bg-black">
-            <section class="banner-section min-vh-100" data-pg-ia-scene='{"d":"50%","s":"onEnter","pin":"true","l":[{"t":"&gt; div","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":1,"scale":1}},{"t":"set","p":0,"d":0,"l":{"class.remove":"in-scroll"}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0,"scale":"20"},"e":"Linear.easeNone"},{"t":"tween","p":0,"d":0.5,"l":{"class.add":"in-scroll"}}]}]}}]}'>
+            <nav class="bg-black fixed-top navbar navbar-dark navbar-expand-lg" data-pg-ia-hide> 
+                <div class="container">
+                    <a class="navbar-brand" href="#">WildMusic</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler8" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
+                        <span class="navbar-toggler-icon"></span> 
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggler8"> 
+                        <ul class="ml-auto mt-2 mt-lg-0 navbar-nav"> 
+                            <li class="active nav-item"> 
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> 
+                            </li>                             
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="#">Events</a> 
+                            </li>
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="#">Artists</a> 
+                            </li>
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="#">Tickets</a> 
+                            </li>
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="#">Contact</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>
+                </div>                 
+            </nav>
+            <section class="banner-section min-vh-100" data-pg-ia-scene='{"d":"50%","s":"onEnter","pin":"true","l":[{"a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":1,"scale":1}},{"t":"set","p":0,"d":0,"l":{"class.remove":"in-scroll"}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0,"scale":"20"},"e":"Linear.easeNone"},{"t":"tween","p":0,"d":0.5,"l":{"class.add":"in-scroll"}}]}]},"t":".banner-overlay"},{"t":"$nav","a":"fadeIn","s":"100","p":"time","t_d":"0.25","rev":"true"}]}'>
                 <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="banner-image"/>
-                <video src="assets/Neon%20-%2021368.mp4" loop="true" autoplay="true" class="banner-video" muted="true">Your browser doesn't support HTML5 video tag.</video>
+                <video src="assets/Neon%20-%2021368.mp4" loop="true" autoplay="true" class="banner-video d-none" muted="true">Your browser doesn't support HTML5 video tag.</video>
+                <div class="banner-yt-video embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://youtube.com/embed/SVlVkokzIpA?autoplay=1&controls=0&showinfo=0&autohide=1"></iframe>
+                </div>
                 <div class="banner-overlay d-flex flex-column min-vh-100">
                     <div class="bg-black flex-fill"></div>
-                    <img src="assets/images/text%20effect.svg" class="banner-text img-fluid" data-pg-ia='{"l":[{"trg":"mouseenter","mm_a":"run","t":"$.banner-section &gt; div","a":{"n":"","l":[{"t":"$.banner-section &gt; div","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":"0"},"e":"Quad.easeIn"}]}]},"tc":"no-class","tcv":"in-scroll","rstr":"true"},{"trg":"mouseleave","t":"$.banner-section &gt; div","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.3,"l":{"autoAlpha":"1"}}]}]},"tc":"no-class","rstr":"true","tcv":"in-scroll"}]}'/>
+                    <img src="assets/images/text%20effect.svg" class="banner-text img-fluid" data-pg-ia='{"l":[{"trg":"mouseenter","mm_a":"run","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":"0"},"e":"Quad.easeIn"}]}]},"tc":"no-class","tcv":"in-scroll","rstr":"true","t":"$.banner-section &gt; div.banner-overlay"},{"trg":"mouseleave","t":"$.banner-section &gt; div.banner-overlay","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.3,"l":{"autoAlpha":"1"}}]}]},"tc":"no-class","tcv":"in-scroll","rstr":"true"}]}'/>
                     <div class="bg-black flex-fill"></div>
                 </div>
             </section>
@@ -35,9 +65,20 @@
                     </div>
                 </div>
             </section>
-            <section class="event-section py-5 text-white">
-                <h2 class="floating-title" data-pg-ia-scene='{"s":"onEnter","l":[{"t":"this","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"-50vh"},"e":"Linear.easeNone"}]}]}}]}'>Upcoming Events</h2>
-                <div class="container-fluid mb-5 overflow-hidden py-5 v-scrolling-block" data-pg-ia-scene='{"l":[{"t":".flex-nowrap","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"x":"-100vh"},"e":"Linear.easeNone"}]}]}}],"s":"onEnter"}'>
+            <section class="event-section py-5 text-white" data-pg-ia-scene='{"s":"onEnter","l":[{"t":".floating-title","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"-50vh"},"e":"Linear.easeNone"}]}]}},{"t":".v-scrolling-block","a":{"n":"","l":[{"t":"div","l":[{"t":"tween","p":0,"d":1,"l":{"x":"-100vh"},"e":"Linear.easeNone"}]}]}},{"t":".col-lg-7","a":"fadeInUp","s":"20%","p":"time","t_d":"0.5"}]}'>
+                <h2 class="floating-title">Upcoming Events</h2>
+                <div class="container py-5">
+                    <div class="align-items-center row">
+                        <div class="col-lg-7 mb-5 order-lg-2" data-pg-ia-hide>
+                            <p>“It was a nice hybrid of where we had been and where we’re going, and it opened my eyes a bit,” says Daughtry. “Everything was so serious and doom and gloom, and ‘You broke my heart,’ but we never saw ourselves as those people outside the music — onstage we were always joking around. That helped me wrap my head around the fact that we can be light-hearted and still be us. And that really changed the way I approach the songs in general.”</p>
+                            <a href="" class="see-more">Buy Tickets</a>
+                        </div>
+                        <div class="col-lg-5 order-lg-1">
+                            <a href="#" class="d-block event-main-link p-4"> <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Daughtry with The Kenny Wayne Shepherd Band</h4><span>02-12-2019</span> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid mb-lg-5 overflow-hidden py-lg-5 v-scrolling-block">
                     <div class="flex-nowrap no-gutters row">
                         <div class="col-3">
                             <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
@@ -65,20 +106,20 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            <section class="event-section py-5 text-right text-white" data-pg-ia-scene='{"l":[{"t":".v-scrolling-block","a":{"n":"","l":[{"t":"div","l":[{"t":"tween","p":0,"d":1,"l":{"x":"100vh"},"e":"Linear.easeNone"}]}]}},{"t":".col-lg-7","a":"fadeInUp","s":"20","p":"time","sc_d":"0.5","t_d":"0.5"}]}'>
                 <div class="container py-5">
                     <div class="align-items-center row">
-                        <div class="col-lg-7 mb-5 order-lg-2" data-pg-ia-scene='{"s":"onEnter","o":"0px","l":[{"t":"this","a":"fadeInUp","p":"time","t_d":"0.5"}]}' data-pg-ia-hide>
-                            <p>“It was a nice hybrid of where we had been and where we’re going, and it opened my eyes a bit,” says Daughtry. “Everything was so serious and doom and gloom, and ‘You broke my heart,’ but we never saw ourselves as those people outside the music — onstage we were always joking around. That helped me wrap my head around the fact that we can be light-hearted and still be us. And that really changed the way I approach the songs in general.”</p>
+                        <div class="col-lg-7 mb-5" data-pg-ia-hide>
+                            <p>GRAMMY Award-winning, legendary artists Carlos Santana and Earth, Wind & Fire will embark on a North American tour, expected to be the hottest ticket this summer. A continuation of 2019’s Supernatural Now tour for Santana, the Miraculous Supernatural 2020 Tour will mark the first time that these two powerhouses will share the stage in the U.S. The tour will make a stop in Cincinnati, OH at Riverbend Music Center on Wednesday, July 8.</p>
                             <a href="" class="see-more">Buy Tickets</a>
                         </div>
-                        <div class="col-lg-5 order-lg-1">
-                            <a href="#" class="d-block event-main-link p-4"> <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Daughtry with The Kenny Wayne Shepherd Band</h4><span>02-12-2019</span> </a>
+                        <div class="col-lg-5">
+                            <a href="#" class="d-block event-main-link p-4"> <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Miraculous Supernatural 2020 Tour</h4><span>02-12-2019</span> </a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="event-section py-5 text-right text-white">
-                <div class="container-fluid mb-5 overflow-hidden py-5 v-scrolling-block" data-pg-ia-scene='{"l":[{"t":"&gt; div","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"x":"100vh"},"e":"Linear.easeNone"}]}]}}],"s":"onEnter"}'>
+                <div class="container-fluid mb-lg-5 overflow-hidden py-lg-5 v-scrolling-block">
                     <div class="flex-nowrap justify-content-end no-gutters row">
                         <div class="col-3">
                             <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
@@ -106,33 +147,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="container py-5">
-                    <div class="align-items-center row">
-                        <div class="col-lg-7 mb-5" data-pg-ia-scene='{"s":"onEnter","l":[{"t":"this","a":"fadeInUp","p":"time","t_d":"0.5"}],"o":"0px"}' data-pg-ia-hide>
-                            <p>GRAMMY Award-winning, legendary artists Carlos Santana and Earth, Wind & Fire will embark on a North American tour, expected to be the hottest ticket this summer. A continuation of 2019’s Supernatural Now tour for Santana, the Miraculous Supernatural 2020 Tour will mark the first time that these two powerhouses will share the stage in the U.S. The tour will make a stop in Cincinnati, OH at Riverbend Music Center on Wednesday, July 8.</p>
-                            <a href="" class="see-more">Buy Tickets</a>
-                        </div>
-                        <div class="col-lg-5">
-                            <a href="#" class="d-block event-main-link p-4"> <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Miraculous Supernatural 2020 Tour</h4><span>02-12-2019</span> </a>
-                        </div>
-                    </div>
-                </div>
             </section>
-            <section class="py-5 text-white">
-                <h2 class="floating-title" data-pg-ia-scene='{"s":"onEnter","l":[{"t":"this","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"-50vh"},"e":"Linear.easeNone"}]}]}}]}'>Recent Events</h2>
+            <section class="py-5 recent-event-section text-white" data-pg-ia-scene='{"s":"onEnter","l":[{"t":".floating-title","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"-50vh"},"e":"Linear.easeNone"}]}]}}]}'>
+                <h2 class="floating-title">Recent Events</h2>
                 <div class="container py-5">
                     <div class="row">
+                        <div class="col-lg-6" data-pg-ia-scene='{"s":"onEnter","o":"100px","l":[{"p":"time","a":{"n":"","l":[{"t":".event-link","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0,"transition":"none"}},{"t":"tween","p":0,"d":1,"l":{"autoAlpha":1}}]}]}}]}' data-pg-ia-apply="$.recent-event-section > .container > .row > div.pt-lg-5:nth-of-type(1), .recent-event-section > .container > .row > div:nth-of-type(3), .recent-event-section > .container > .row > div.pt-lg-5:nth-of-type(2)">
+                            <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Daryl Hall & John Oates with Squeeze and KT Tunstall</h4> </a>
+                        </div>
+                        <div class="col-lg-6 pt-lg-5">
+                            <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Kesha – The High Road Tour with Big Freedia</h4> </a>
+                        </div>
                         <div class="col-lg-6">
-                            <a href="#" class="d-block px-4 work-block" data-pg-ia-scene='{"s":"onEnter","o":"100px","l":[{"t":"this","a":"fadeIn","s":"0.5","p":"time"}]}' data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Daryl Hall & John Oates with Squeeze and KT Tunstall</h4> </a>
+                            <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>AJR: The Neotheater World Tour – Part 2 with almost monday</h4> </a>
                         </div>
-                        <div class="col-lg-6 pt-5">
-                            <a href="#" class="d-block px-4 work-block" data-pg-ia-scene='{"s":"onEnter","o":"200px","l":[{"t":"this","a":"fadeIn","s":"0.5","p":"time"}]}' data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Kesha – The High Road Tour with Big Freedia</h4> </a>
-                        </div>
-                        <div class="col-lg-6">
-                            <a href="#" class="d-block px-4 work-block" data-pg-ia-scene='{"s":"onEnter","o":"100px","l":[{"t":"this","a":"fadeIn","s":"0.5","p":"time"}]}' data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>AJR: The Neotheater World Tour – Part 2 with almost monday</h4> </a>
-                        </div>
-                        <div class="col-lg-6 pt-5">
-                            <a href="#" class="d-block px-4 work-block" data-pg-ia-scene='{"s":"onEnter","l":[{"t":"this","a":"fadeIn","s":"0.5","p":"time"}],"o":"200px"}' data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1525362081669-2b476bb628c3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Ozzy Osbourne with Marilyn Manson</h4> </a>
+                        <div class="col-lg-6 pt-lg-5">
+                            <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1525362081669-2b476bb628c3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Ozzy Osbourne with Marilyn Manson</h4> </a>
                         </div>
                     </div>
                     <div class="mt-4 text-center">
