@@ -48,7 +48,7 @@
                 <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="banner-image"/>
                 <video src="assets/Neon%20-%2021368.mp4" loop="true" autoplay="true" class="banner-video d-none" muted="true">Your browser doesn't support HTML5 video tag.</video>
                 <div class="banner-yt-video embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://youtube.com/embed/SVlVkokzIpA?autoplay=1&controls=0&showinfo=0&autohide=1"></iframe>
+                    <div id="yt-video"></div>
                 </div>
                 <div class="banner-overlay d-flex flex-column min-vh-100">
                     <div class="bg-black flex-fill"></div>
@@ -210,6 +210,31 @@
                 jQuery('html, body').animate({scrollTop: 0}, 1000);
                 return false;
             })
+
+            var tag = document.createElement('script');
+
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            var player;
+
+            function onYouTubeIframeAPIReady() {
+              player = new YT.Player('yt-video', {
+                  videoId: 'SVlVkokzIpA',
+                  playerVars: {
+                      'autoplay': 1,
+                      'controls': 0,
+                      'origin': 'http://127.0.0.1:40000',
+                      'loop': 1
+                  },
+                  events: {
+                      'onReady': function(e) {
+                          e.target.mute();
+                      }
+                  }
+              });
+            }
         </script>
     </body>
 </html>
