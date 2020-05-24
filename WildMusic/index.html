@@ -46,10 +46,6 @@
             </nav>
             <section class="banner-section min-vh-100" data-pg-ia-scene='{"d":"50%","s":"onEnter","pin":"true","l":[{"a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":1,"scale":1}},{"t":"set","p":0,"d":0,"l":{"class.remove":"in-scroll"}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0,"scale":"20"},"e":"Linear.easeNone"},{"t":"tween","p":0,"d":0.5,"l":{"class.add":"in-scroll"}}]}]},"t":".banner-overlay"},{"t":"$nav","a":"fadeIn","s":"100","p":"time","t_d":"0.25","rev":"true"}]}'>
                 <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="banner-image"/>
-                <video src="assets/Neon%20-%2021368.mp4" loop="true" autoplay="true" class="banner-video d-none" muted="true">Your browser doesn't support HTML5 video tag.</video>
-                <div class="banner-yt-video embed-responsive embed-responsive-16by9">
-                    <div id="yt-video"></div>
-                </div>
                 <div class="banner-overlay d-flex flex-column min-vh-100">
                     <div class="bg-black flex-fill"></div>
                     <img src="assets/images/text%20effect.svg" class="banner-text img-fluid" data-pg-ia='{"l":[{"trg":"mouseenter","mm_a":"run","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":"0"},"e":"Quad.easeIn"}]}]},"tc":"no-class","tcv":"in-scroll","rstr":"true","t":"$.banner-section &gt; div.banner-overlay"},{"trg":"mouseleave","t":"$.banner-section &gt; div.banner-overlay","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.3,"l":{"autoAlpha":"1"}}]}]},"tc":"no-class","tcv":"in-scroll","rstr":"true"}]}'/>
@@ -210,31 +206,6 @@
                 jQuery('html, body').animate({scrollTop: 0}, 1000);
                 return false;
             })
-
-            var tag = document.createElement('script');
-
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-            var player;
-
-            function onYouTubeIframeAPIReady() {
-              player = new YT.Player('yt-video', {
-                  videoId: 'SVlVkokzIpA',
-                  playerVars: {
-                      'autoplay': 1,
-                      'controls': 0,
-                      'origin': 'http://127.0.0.1:40000',
-                      'loop': 1
-                  },
-                  events: {
-                      'onReady': function(e) {
-                          e.target.mute();
-                      }
-                  }
-              });
-            }
         </script>
     </body>
 </html>

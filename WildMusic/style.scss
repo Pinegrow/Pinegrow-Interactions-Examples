@@ -75,43 +75,6 @@ img.banner-image {
     top: 0;
 }
 
-.banner-video {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.banner-yt-video {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    top: 0;
-    left: 0;
-
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        border: none;
-
-        @media (min-aspect-ratio: 16/9) {
-            height: 300%;
-            top: -100%;
-        }
-
-        @media (max-aspect-ratio: 16/9) {
-            width: 400%;
-            left: -150%;
-        }
-    }
-}
-
 .banner-overlay {
     position: relative;
     height: 100%;
