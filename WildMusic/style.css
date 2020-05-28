@@ -105,17 +105,17 @@ a.event-main-link {
     background-color: gray;
     color: white; }
 
-.v-scrolling-block {
+.h-scrolling-block {
   width: 100%; }
   @media (min-width: 992px) {
-    .v-scrolling-block {
+    .h-scrolling-block {
       position: absolute;
       bottom: 0;
       left: 0;
       z-index: -1; } }
-  .v-scrolling-block > .row {
+  .h-scrolling-block > .row {
     min-width: 1200px; }
-  .v-scrolling-block img {
+  .h-scrolling-block img {
     height: 240px;
     width: 100%;
     min-width: 300px;
@@ -159,9 +159,9 @@ footer {
   position: fixed;
   right: 50%;
   bottom: 0px;
-  -webkit-transform: translate(50%, 100%);
-      -ms-transform: translate(50%, 100%);
-          transform: translate(50%, 100%);
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
   background-color: black;
   color: white;
   border: none;

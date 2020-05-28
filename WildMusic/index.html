@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,300,500,600,700,800,900&display=swap">
         <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
     </head>
-    <body data-pg-ia-scene='{"d":"4500px","s":"onCenter","l":[{"t":".go-to-top","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"0"}}]}]},"s":"100%","p":"scroll"}]}'>
+    <body>
         <main class="bg-black">
             <nav class="bg-black fixed-top navbar navbar-dark navbar-expand-lg" data-pg-ia-hide> 
                 <div class="container">
@@ -61,11 +61,11 @@
                     </div>
                 </div>
             </section>
-            <section class="event-section py-5 text-white" data-pg-ia-scene='{"s":"onEnter","l":[{"t":".floating-title","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"-50vh"},"e":"Linear.easeNone"}]}]}},{"t":".col-lg-7","a":"fadeInUp","s":"20","p":"time","t_d":"0.5"}]}'>
+            <section class="event-section py-5 text-white" data-pg-ia-scene='{"s":"onEnter","l":[{"t":".floating-title","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"-50vh"},"e":"Linear.easeNone"}]}]}},{"a":"fadeInUp","s":"20","p":"time","t_d":"0.5","t":".event-details"}]}'>
                 <h2 class="floating-title">Upcoming Events</h2>
                 <div class="container py-5">
                     <div class="align-items-center row">
-                        <div class="col-lg-7 mb-5 order-lg-2" data-pg-ia-hide>
+                        <div class="col-lg-7 event-details mb-5 order-lg-2" data-pg-ia-hide>
                             <p>“It was a nice hybrid of where we had been and where we’re going, and it opened my eyes a bit,” says Daughtry. “Everything was so serious and doom and gloom, and ‘You broke my heart,’ but we never saw ourselves as those people outside the music — onstage we were always joking around. That helped me wrap my head around the fact that we can be light-hearted and still be us. And that really changed the way I approach the songs in general.”</p>
                             <a href="" class="see-more">Buy Tickets</a>
                         </div>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid mb-lg-5 overflow-hidden py-lg-5 v-scrolling-block" data-pg-ia-scene='{"s":"onEnter","l":[{"t":"this","a":{"n":"","l":[{"t":".row","l":[{"t":"tween","p":0,"d":1,"l":{"x":"-100vh"},"e":"Linear.easeNone"}]}]}}]}'>
+                <div class="container-fluid h-scrolling-block mb-lg-5 overflow-hidden py-lg-5" data-pg-ia-scene='{"s":"onEnter","l":[{"t":"this","a":{"n":"","l":[{"t":".row","l":[{"t":"tween","p":0,"d":1,"l":{"x":"-100vh"},"e":"Linear.easeNone"}]}]}}]}'>
                     <div class="flex-nowrap no-gutters row">
                         <div class="col-3">
                             <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
@@ -103,10 +103,10 @@
                     </div>
                 </div>
             </section>
-            <section class="event-section py-5 text-right text-white" data-pg-ia-scene='{"l":[{"t":".col-lg-7","a":"fadeInUp","s":"20","p":"time","sc_d":"0.5","t_d":"0.5"}]}'>
+            <section class="event-section py-5 text-right text-white" data-pg-ia-scene='{"l":[{"a":"fadeInUp","s":"20","p":"time","sc_d":"0.5","t_d":"0.5","t":".event-details"}]}'>
                 <div class="container py-5">
                     <div class="align-items-center row">
-                        <div class="col-lg-7 mb-5" data-pg-ia-hide>
+                        <div class="col-lg-7 event-details mb-5" data-pg-ia-hide>
                             <p>GRAMMY Award-winning, legendary artists Carlos Santana and Earth, Wind & Fire will embark on a North American tour, expected to be the hottest ticket this summer. A continuation of 2019’s Supernatural Now tour for Santana, the Miraculous Supernatural 2020 Tour will mark the first time that these two powerhouses will share the stage in the U.S. The tour will make a stop in Cincinnati, OH at Riverbend Music Center on Wednesday, July 8.</p>
                             <a href="" class="see-more">Buy Tickets</a>
                         </div>
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid mb-lg-5 overflow-hidden py-lg-5 v-scrolling-block" data-pg-ia-scene='{"s":"onEnter","l":[{"t":"this","a":{"n":"","l":[{"t":".row","l":[{"t":"tween","p":0,"d":1,"l":{"x":"100vh"},"e":"Linear.easeNone"}]}]}}]}'>
+                <div class="container-fluid h-scrolling-block mb-lg-5 overflow-hidden py-lg-5" data-pg-ia-scene='{"s":"onEnter","l":[{"t":"this","a":{"n":"","l":[{"t":".row","l":[{"t":"tween","p":0,"d":1,"l":{"x":"100vh"},"e":"Linear.easeNone"}]}]}}]}'>
                     <div class="flex-nowrap justify-content-end no-gutters row">
                         <div class="col-3">
                             <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>

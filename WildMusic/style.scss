@@ -121,7 +121,7 @@ a.event-main-link {
     }
 }
 
-.v-scrolling-block {
+.h-scrolling-block {
     width: 100%;
 
     @media (min-width: 992px){
@@ -186,7 +186,7 @@ footer {
     position: fixed;
     right: 50%;
     bottom: 0px;
-    transform: translate(50%, 100%);
+    transform: translateX(50%);
     background-color: black;
     color: white;
     border: none;
