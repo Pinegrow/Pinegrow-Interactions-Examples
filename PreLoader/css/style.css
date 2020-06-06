@@ -1,0 +1,64 @@
+body {
+    min-height: 100vh;
+    background-color: #1279af;
+    background-image: linear-gradient(135deg, rgb(18, 121, 175) 7.44518%, rgb(113, 198, 200) 100%);
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.site-preloader {
+    height: 100%;
+    background: #cccccc;
+    z-index: 9999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.site-preloader.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.site-preloader p {
+    display: none;
+}
+
+.loading-cubes span {
+    height: 15px;
+    width: 15px;
+    background: #666666;
+    display: inline-block;
+    animation: movingCubes 1s linear infinite alternate;
+}
+
+.loading-cubes span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.loading-cubes span:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+@keyframes movingCubes {
+    0% {
+        background-color: #666666;
+    }
+
+    100% {
+        background-color: #cccccc;
+    }
+}
+
+.sample-img {
+    max-width: 100%;
+}
