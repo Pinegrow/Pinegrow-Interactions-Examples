@@ -11,16 +11,24 @@
         <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
     </head>
     <body>
-        <div class="site-preloader" data-pg-ia='{"l":[{"trg":"now","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.add":"active"}}]}]}},{"trg":"load","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.5,"l":{"class.remove":"active"}}]}]}}]}'>
-            <p>Loading...</p>
-            <div class="loading-cubes">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="site-preloader" data-pg-ia='{"l":[{"trg":"now","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":"1"}}]},{"t":".loading-cubes","l":[{"t":"set","p":0,"d":0,"l":{"class.add":"active"}}]}]}},{"trg":"load","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":"0","visibility":"hidden"}}]},{"t":".loading-cubes","l":[{"t":"set","p":0.5,"d":0,"l":{"class.remove":"active"}}]}]}},{"trg":"now","t":".loading-cubes","a":{"n":"","l":[{"t":"span","l":[{"t":"set","p":0,"d":0,"s":0,"l":{"autoAlpha":"0"}},{"t":"tween","p":0,"d":1,"s":0.33,"l":{"autoAlpha":"1"}}]}]},"rpt":"-1","tc":"class","tcv":"active"}]}'>
+            <div class="preloader-content">
+                <p>Loading...</p>
+                <div class="loading-cubes">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
-        <img src="https://images.unsplash.com/photo-1590203127965-fdb8093082ee?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="sample-img"/>
-        <img src="https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="sample-img"/>
+        <section class="main-container">
+            <img src="https://images.unsplash.com/photo-1590203127965-fdb8093082ee?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="sample-img"/>
+            <img src="https://images.unsplash.com/photo-1475758034847-67f548b9f8d9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="sample-img"/>
+            <img src="https://images.unsplash.com/photo-1475265383395-bc9a744c8fbd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="sample-img"/>
+            <img src="https://images.unsplash.com/photo-1579765338264-a74752e9a112?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="sample-img"/>
+            <img src="https://images.unsplash.com/photo-1574270521420-49454b6f5616?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="sample-img"/>
+            <img src="https://images.unsplash.com/photo-1526925528837-813a7961f5c7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="sample-img"/>
+        </section>
         <script type="text/javascript" src="pgia/lib/pgia.js"></script>
     </body>
 </html>

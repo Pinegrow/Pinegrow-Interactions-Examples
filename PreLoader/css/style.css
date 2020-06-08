@@ -9,6 +9,7 @@ body {
 
 .site-preloader {
     height: 100%;
+    width: 100%;
     background: #cccccc;
     z-index: 9999999;
     position: fixed;
@@ -16,12 +17,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 1.25rem;
-    opacity: 0;
-    visibility: hidden;
+
+    /* opacity: 0; */
+    /* visibility: hidden; */
 }
 
 .site-preloader.active {
@@ -29,7 +28,17 @@ body {
     visibility: visible;
 }
 
-.site-preloader p {
+.preloader-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background: red; */
+}
+
+.preloader-content p {
     display: none;
 }
 
@@ -38,7 +47,8 @@ body {
     width: 15px;
     background: #666666;
     display: inline-block;
-    animation: movingCubes 1s linear infinite alternate;
+
+    /* animation: movingCubes 1s linear infinite alternate; */
 }
 
 .loading-cubes span:nth-child(2) {
@@ -61,4 +71,13 @@ body {
 
 .sample-img {
     max-width: 100%;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    align-content: center;
+    height: 100vh;
 }
