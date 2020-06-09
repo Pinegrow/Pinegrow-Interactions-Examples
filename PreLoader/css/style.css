@@ -18,9 +18,8 @@ body {
     right: 0;
     bottom: 0;
     font-size: 1.25rem;
-
-    /* opacity: 0; */
-    /* visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
 }
 
 .site-preloader.active {
