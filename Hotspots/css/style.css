@@ -1,0 +1,108 @@
+body {
+    min-height: 100vh;
+    background-color: #1279af;
+    color: white;
+    background-image: linear-gradient(135deg, rgb(18, 121, 175) 7.44518%, rgb(113, 198, 200) 100%);
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hotspots--container {
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.hotspots--image {
+    width: 100%;
+    user-select: none;
+    display: block;
+}
+
+.hotspots--main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    font-size: 1.5vw;
+}
+
+.hotspots {
+    position: absolute;
+}
+
+.hotspots.hotspots--1 {
+    top: 8%;
+    left: 25%;
+}
+
+.hotspots.hotspots--2 {
+    top: 50%;
+    left: 40%;
+}
+
+.hotspots.hotspots--3 {
+    top: 40%;
+    left: 60%;
+}
+
+.hotspots.hotspots--4 {
+    top: 70%;
+    left: 85%;
+}
+
+.hotspots.hotspots--4 > .content {
+    left: unset;
+    right: 0;
+}
+
+.hotspots button.hotspots--trigger {
+    background: white;
+    border-radius: 50%;
+    border: none;
+    line-height: 2em;
+    width: 2em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0;
+    cursor: pointer;
+    animation: hsButtons 1s ease infinite alternate;
+}
+
+.hotspots .content {
+    position: absolute;
+    top: 3em;
+    left: 0;
+    background: white;
+    color: #444444;
+    padding: 0 0.5rem;
+    border-radius: 3px;
+    min-width: 150px;
+    max-width: 60%;
+    font-size: 0.8em;
+    z-index: 999;
+}
+
+@keyframes hsButtons {
+    0% {
+        box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 0px 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+@media (max-width: 768px){
+    .hotspots > .content {
+    }
+}
