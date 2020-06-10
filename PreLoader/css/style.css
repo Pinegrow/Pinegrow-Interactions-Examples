@@ -79,4 +79,5 @@ body {
     grid-gap: 20px;
     align-content: center;
     height: 100vh;
+    padding: 1rem;
 }
