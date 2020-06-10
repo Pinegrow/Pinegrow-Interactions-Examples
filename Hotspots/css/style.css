@@ -76,6 +76,7 @@ main {
     padding: 0;
     cursor: pointer;
     animation: hsButtons 1s ease infinite alternate;
+    outline: none;
 }
 
 .hotspots .content {
