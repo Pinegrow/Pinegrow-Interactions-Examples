@@ -33,7 +33,7 @@ main {
     left: 0;
     right: 0;
     z-index: 9999;
-    font-size: 1.5vw;
+    font-size: 1.5vmin;
 }
 
 .hotspots {
@@ -84,7 +84,7 @@ main {
     left: 0;
     background: white;
     color: #444444;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     border-radius: 3px;
     min-width: 150px;
     max-width: 60%;
