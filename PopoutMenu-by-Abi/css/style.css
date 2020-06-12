@@ -17,7 +17,6 @@ main {
 
 nav.popOut-menu {
     position: relative;
-    display: flex;
 }
 
 nav.popOut-menu a {
@@ -31,7 +30,8 @@ nav.popOut-menu a {
     color: #404040;
     background-color: #fff;
     font-size: 28px;
-    margin-left: 10px;
+
+    /* margin-left: 10px; */
 }
 
 nav.popOut-menu a:first-child {
@@ -39,7 +39,8 @@ nav.popOut-menu a:first-child {
 }
 
 nav.popOut-menu a.toggle {
-    z-index: 1;
+    /* z-index: 1; */
+    position: relative;
 }
 
 nav.popOut-menu a.toggle > span {
@@ -55,4 +56,27 @@ nav.popOut-menu a.toggle > span:last-child {
 }
 
 nav.popOut-menu a.link {
-}}
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+nav.popOut-menu a.link:nth-of-type(1) {
+    left: 68px;
+}
+
+nav.popOut-menu a.link:nth-of-type(2) {
+    left: 136px;
+}
+
+nav.popOut-menu a.link:nth-of-type(3) {
+    left: 204px;
+}
+
+nav.popOut-menu a.link:nth-of-type(4) {
+    left: 272px;
+}
+
+nav.popOut-menu a.link:nth-of-type(5) {
+    left: 340px;
+}
