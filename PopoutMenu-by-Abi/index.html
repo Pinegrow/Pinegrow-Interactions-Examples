@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Popout Menu Interaction with Pinegrow</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,600,500,400&display=swap">
+        <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    </head>
+    <body>
+        <main>
+            <h1>Interactive Popout Menu with Pinegrow</h1>
+            <p>Accordion is the domain of fiction; events in this book will stand apart from the usual well-worn and well-loved tales. Though the story of the Ayura Plane is not part of their world, there are elements of the situation that will resonate with readers.</p>
+            <nav class="popOut-menu">
+                <a href="" data-pg-ia='{"l":[{"trg":"click","pdef":"true","trev":"true","spdrev":"200","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0.3,"d":0.2,"l":{"autoAlpha":"0.5"}}]},{"t":"&gt; span:nth-of-type(1)","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"45","y":"6"}}]},{"t":"&gt; span:nth-of-type(2)","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":"0"}}]},{"t":"&gt; span:nth-of-type(3)","l":[{"t":"tween","p":0,"d":0.3,"l":{"rotationZ":"-45","y":"-6"}}]},{"t":"^nav | .link","l":[{"t":"tween","p":0,"d":0.3,"s":0.1,"l":{"position":"relative","left":"unset","marginLeft":"10","rotationZ":"0"}}]},{"t":"^nav | .link:nth-of-type(2)","l":[{"t":"set","p":0,"d":0,"s":0.05,"l":{"rotationZ":"-90"}}]},{"t":"^nav | .link:nth-of-type(3)","l":[{"t":"set","p":0,"d":0,"s":0.05,"l":{"rotationZ":"-180"}}]},{"t":"^nav | .link:nth-of-type(4)","l":[{"t":"set","p":0,"d":0,"s":0.05,"l":{"rotationZ":"-270"}}]},{"t":"^nav | .link:nth-of-type(5)","l":[{"t":"set","p":0,"d":0,"s":0.05,"l":{"rotationZ":"-360"}}]},{"t":"^nav | .link:nth-of-type(6)","l":[{"t":"set","p":0,"d":0,"s":0.05,"l":{"rotationZ":"-450"}}]}]}}]}' class="toggle"><span></span><span></span><span></span></a>
+                <a href="" class="link" data-pg-ia='{"l":[{"trg":"now","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"position":"absolute","left":"0","marginLeft":"0"}}]}]}}]}' data-pg-ia-apply="$nav.popOut-menu a.link"><i class="fas fa-bell"></i></a>
+                <a href="" class="link"><i class="fas fa-birthday-cake"></i></a>
+                <a href="" class="link"><i class="fas fa-broom"></i></a>
+                <a href="" class="link"><i class="fas fa-book-open"></i></a>
+                <a href="" class="link"><i class="fas fa-cloud-download-alt"></i></a>
+            </nav>
+        </main>
+        <script type="text/javascript" src="pgia/lib/pgia.js"></script>
+    </body>
+</html>
