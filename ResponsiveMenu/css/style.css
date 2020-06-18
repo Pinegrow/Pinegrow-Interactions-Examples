@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 200vh;
+    background-color: #1279af;
+    color: white;
+    background-image: linear-gradient(135deg, rgb(18, 121, 175) 7.44518%, rgb(113, 198, 200) 100%);
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: #006ab6;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+main {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav.navbar {
+    background: white;
+    display: flex;
+    padding: 0.5rem 1rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999999;
+}
+
+nav.navbar.navbar__floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar--logo {
+    padding: 0.5rem 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.navbar--links {
+    display: flex;
+}
+
+.navbar--links a {
+    padding: 0.5rem 1rem;
+}
+
+.navbar--links a:hover,
+.navbar--links a.active {
+    color: #ffffff;
+    background-color: #006ab6;
+}
+
+.navbar--toggle {
+    cursor: pointer;
+    padding: 0;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: none;
+}
+
+.navbar--toggle > span {
+    width: 22px;
+    height: 2px;
+    background-color: #006ab6;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.navbar--toggle > span:last-child {
+    margin-bottom: 0;
+}
+
+.navbar--toggle:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 991px){
+    nav.navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar--links {
+        display: none;
+        flex-basis: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar--links a {
+        padding: 0.5rem 2rem;
+    }
+
+    .navbar--toggle {
+        display: block;
+    }
+
+    nav.navbar.navbar__dropdown .navbar--links {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background: inherit;
+        left: 0;
+        margin-top: 1px;
+        padding: 1rem;
+    }
+
+    nav.navbar.navbar__floating .navbar--links {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: inherit;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
