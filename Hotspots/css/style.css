@@ -34,36 +34,36 @@ main {
     font-size: 1.5vw;
 }
 
-.hotspots {
+.hotspot {
     position: absolute;
 }
 
-.hotspots.hotspots--1 {
+.hotspot.hotspot--1 {
     top: 8%;
     left: 25%;
 }
 
-.hotspots.hotspots--2 {
+.hotspot.hotspot--2 {
     top: 50%;
     left: 40%;
 }
 
-.hotspots.hotspots--3 {
+.hotspot.hotspot--3 {
     top: 40%;
     left: 60%;
 }
 
-.hotspots.hotspots--4 {
+.hotspot.hotspot--4 {
     top: 70%;
     left: 85%;
 }
 
-.hotspots.hotspots--4 > .content {
+.hotspot.hotspot--4 > .hotspot--content {
     left: unset;
     right: 0;
 }
 
-.hotspots button.hotspots--trigger {
+.hotspot button.hotspot--trigger {
     background: white;
     border-radius: 50%;
     border: none;
@@ -77,7 +77,7 @@ main {
     outline: none;
 }
 
-.hotspots .content {
+.hotspot .hotspot--content {
     position: absolute;
     top: 3em;
     left: 0;
