@@ -48,7 +48,7 @@
                 <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="banner-image"/>
                 <div class="banner-overlay d-flex flex-column min-vh-100">
                     <div class="bg-black flex-fill"></div>
-                    <img src="assets/images/text%20effect.svg" class="banner-text img-fluid" data-pg-ia='{"l":[{"trg":"mouseenter","mm_a":"run","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":"0"},"e":"Quad.easeIn"}]}]},"tc":"no-class","tcv":"in-scroll","rstr":"true","t":"$.banner-section &gt; div.banner-overlay"},{"trg":"mouseleave","t":"$.banner-section &gt; div.banner-overlay","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.3,"l":{"autoAlpha":"1"}}]}]},"tc":"no-class","tcv":"in-scroll","rstr":"true"}]}'/>
+                    <img src="assets/images/text%20effect.svg" class="banner-text img-fluid" data-pg-ia='{"l":[{"trg":"mouseenter","mm_a":"run","t":"$.banner-section &gt; div.banner-overlay","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.2,"l":{"opacity":0},"e":"Quad.easeIn"}]}]},"tc":"no-class","tcv":"in-scroll","rstr":"true"},{"trg":"mouseleave","t":"$.banner-section &gt; div.banner-overlay","tc":"no-class","tcv":"in-scroll","rstr":"true","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.3,"l":{"opacity":1}}]}]}}]}'/>
                     <div class="bg-black flex-fill"></div>
                 </div>
             </section>
@@ -199,7 +199,6 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="pgia/lib/pgia.js"></script>
         <script>
             $('#go-to-top').click(function (event) {
                 event.preventDefault();
@@ -207,5 +206,7 @@
                 return false;
             })
         </script>
+        <script type="text/javascript" src="pgia/lib/pgia_lib.js"></script>
+        <script type="text/javascript" src="pgia/lib/pgia_dev.js"></script>
     </body>
 </html>

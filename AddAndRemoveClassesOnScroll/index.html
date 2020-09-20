@@ -19,6 +19,7 @@
             <h1>About this example</h1>
             <p>In this example we add class Active to sections when they come into scroll view. On scrolling in the opposite direction, class Active is removed.</p>
             <p>By default, all sections have the Active class, so that complete information is displayed also when Javascript is disabled in the browser.</p>
+            <p><b>UPDATE: In Pinegrow Interactions 2.0 class changes are no longer animated.</b> That means that classes are still added and removed, but the styling changes between these states are not animated. If you wish to animate styles, you need to add relevant transforms to the animation.</p>
             <p>Notes about implementation:</p>
             <ul>
                 <li>The first section contains the interaction, Apply to Many is used to copy these interactions to other sections.</li>
@@ -26,26 +27,28 @@
                 <li>Custom animation (edited in Timeline Editor) has two transforms:
                     <ul>
                         <li>The first one is a Set that removes class Active and displays the element.</li>
-                        <li>Tween that adds the class Active. Note that the animation engine tweens CSS properties of the class, for example background color.</li>
+                        <li>Tween that adds the class Active. 
+                            <strike>Note that the animation engine tweens CSS properties of the class, for example background color.</strike>
+                        </li>
                     </ul>
                 </li>
                 <li>Hide at Start action is used to hide the element, so that we don't see a flicker when the page loads and Active class is removed by the first Set in the animation.</li>
                 <li>We added bottom margin to the last section, so that it can reach the center scroll position.</li>
             </ul>
         </header>
-        <section data-pg-ia-scene='{"l":[{"a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"active","autoAlpha":"1"}},{"t":"tween","p":0,"d":0.99,"l":{"class.add":"active"}}]}]}}],"s":"onCenter"}' data-pg-ia-apply="$section" class="active" data-pg-ia-hide>
+        <section data-pg-ia-scene='{"s":"onCenter","l":[{"a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"active","autoAlpha":"1"}},{"t":"tween","p":0,"d":0.99,"l":{"class.add":"active"}}]}]}}],"dbg":"true"}' class="active" data-pg-ia-hide data-pg-ia-apply="$section">
             <h1>
     Has "active" class</h1>
         </section>
-        <section class="active">
+        <section class="active" data-pg-ia-hide>
             <h1>
     Has "active" class</h1>
         </section>
-        <section class="active">
+        <section class="active" data-pg-ia-hide>
             <h1>
     Has "active" class</h1>
         </section>
-        <section class="active" style="margin-bottom: 50vh;">
+        <section class="active" style="margin-bottom: 50vh;" data-pg-ia-hide>
             <h1>
     Has "active" class</h1>
         </section>
@@ -98,6 +101,7 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="../pgia/lib/pgia.js"></script>
+        <script type="text/javascript" src="../pgia/lib/pgia_lib.js"></script>
+        <script type="text/javascript" src="../pgia/lib/pgia_dev.js"></script>
     </body>
 </html>
