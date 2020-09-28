@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Starter Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <!-- Custom styles for this template -->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div data-pg-collapsed class="col-md-6">
+                        <h1 class=" mb-5">Horizontal slider with infinite scroll</h1>                          
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="slider" data-pg-ia='{"l":[{"name":"AutoNext","trg":"timer","a":{"n":"","l":[{"t":".slides","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"next"}}}]}]},"tc":"no-class","tcv":"slider-user-active","timer":"10"},{"name":"CloneFirstSlide","trg":"now","a":{"n":"","l":[{"t":".slide:first-child","l":[{"t":"set","p":0,"d":0,"l":{"pgDom":{"clone":1,"ins":"append"}}}]}]}},{"name":"UserActive","trg":"mouseenter","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.add":"slider-user-active"}}]}]},"rstr":"true"},{"name":"UserInactive","trg":"mouseleave","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"slider-user-active"}}]}]},"rstr":"true"}]}' data-pg-ia-apply="$.slider">
+            <div class="slides" data-pg-ia-scene='{"dir":"a","smooth":"0.5","s":"whole","snap":"e","pag":"true","pag_t":".slide","pag_i":"^.slider|.slider-pagination-item","pag_pa":"Current","pag_pd":"-Current","pag_inf":"true"}' data-pg-ia-apply="$.slides" data-pg-ia='{"l":[{"trg":"now","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"overflow":"hidden"}}]}]}}]}'>
+                <div class="slide" style="background: linear-gradient(90deg, #ffe259, #ffa751);">
+                    <h2>Slide 1</h2>
+                </div>
+                <div class="slide" style="background: linear-gradient(90deg, #DCE35B, #45B649);">
+                    <h2>Slide 2</h2>
+                </div>
+                <div class="slide" style="background: linear-gradient(90deg, #FEAC5E, #C779D0, #4BC0C8);">
+                    <h2>Slide 3</h2>
+                </div>
+            </div>
+            <div class="slider-pagination" data-pg-ia='{"l":[{"trg":"now","a":{"n":"","l":[{"t":".slider-pagination-item","l":[{"t":"set","p":0.01,"d":0,"l":{"pgDom":{"clone":1,"count_sel":"^.slider|.slide","count":-2}}}]}]}}]}' data-pg-ia-apply="$.slider-pagination">
+                <a class="slider-pagination-item" data-pg-ia='{"l":[{"trg":"click","pdef":"true","a":{"n":"","l":[{"t":"^.slider|.slides","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"item"}}}]}]}},{"name":"Current","trg":"no","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.5,"l":{"scale":1.5}}]}]}}]}' href="#" data-pg-ia-apply="$.slider-pagination-item"></a>
+            </div>
+            <div class="slider-controls">
+                <a class="first slider-control" data-pg-ia='{"l":[{"trg":"click","a":{"n":"","l":[{"t":"^.slider|.slides","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"${target.data-scroll-to}"}}}]}]},"pdef":"true"}]}' href="#" data-pg-ia-apply="$.slider-control" data-scroll-to="first">&laquo;</a>
+                <a class="prev slider-control" href="#" data-scroll-to="prev">&lsaquo;</a>
+                <a class="next slider-control" href="#" data-scroll-to="next">&rsaquo;</a>
+                <a class="last slider-control" href="#" data-scroll-to="last">&raquo;</a>
+            </div>
+        </div>
+        <section style="height: 300px;"></section>
+        <!-- /.container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script type="text/javascript" src="pgia/lib/pgia.js"></script>
+    </body>
+</html>

@@ -1,0 +1,188 @@
+body {
+    padding-top: 50px;
+}
+
+.starter-template {
+}
+
+.pgia-example {
+    min-height: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(https://pinegrow.com/pg4assets/img/blue.bck.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 640px;
+    position: relative;
+    perspective: 500px;
+
+    /* transform-style: preserve-3d; */
+}
+
+.pgia-box {
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 4px 5px 14px rgba(0, 0, 0, 0.23);
+}
+
+.pgia-scene {
+    padding: 50px 40px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #efefef;
+    overflow: hidden;
+    max-height: 100vh;
+    height: 300px;
+    position: relative;
+}
+
+.pgia-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pgia-scene .title {
+    font-weight: 900;
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.pgia-scene p {
+    position: relative;
+    z-index: 1;
+}
+
+.slider {
+    width: 100%;
+    height: 500px;
+    max-height: 90vh;
+    position: relative;
+}
+
+.slider .slides {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.slider .slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.slider .slider-controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    text-align: center;
+}
+
+.slider .slider-pagination {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 18px;
+    right: 0;
+}
+
+.slider .slider-pagination-item {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.53);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.slider .slider-pagination-item:first-child {
+    margin-left: 0;
+}
+
+.slider .slider-control {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.8);
+    display: inline-flex;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+    font-size: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+.slider .slider-control:hover,
+.slider .slider-control:focus {
+    color: #000000;
+}
+
+.my-tooltip {
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+.my-tooltip[data-pgia-position]:after {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: white;
+    content: '';
+    position: absolute;
+    transform: rotateZ(45deg);
+}
+
+.my-tooltip[data-pgia-position="left"]:after {
+    right: -6px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.my-tooltip[data-pgia-position="right"]:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.my-tooltip[data-pgia-position="top"]:after {
+    bottom: -6px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.my-tooltip[data-pgia-position="bottom"]:after {
+    top: -6px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+[data-my-tooltip] {
+    cursor: help;
+    border-bottom: 1px dashed;
+}
