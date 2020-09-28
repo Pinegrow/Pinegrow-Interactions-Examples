@@ -58,7 +58,7 @@ main {
     left: 85%;
 }
 
-.hotspot--4 > .hotspot--content {
+.hotspot.hotspot--4 > .hotspot--content {
     left: unset;
     right: 0;
 }
