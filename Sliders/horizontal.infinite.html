@@ -29,7 +29,7 @@
             </div>
         </header>
         <div class="slider" data-pg-ia='{"l":[{"name":"AutoNext","trg":"timer","a":{"n":"","l":[{"t":".slides","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"next"}}}]}]},"tc":"no-class","tcv":"slider-user-active","timer":"10"},{"name":"CloneFirstSlide","trg":"now","a":{"n":"","l":[{"t":".slide:first-child","l":[{"t":"set","p":0,"d":0,"l":{"pgDom":{"clone":1,"ins":"append"}}}]}]}},{"name":"UserActive","trg":"mouseenter","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.add":"slider-user-active"}}]}]},"rstr":"true"},{"name":"UserInactive","trg":"mouseleave","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"slider-user-active"}}]}]},"rstr":"true"}]}' data-pg-ia-apply="$.slider">
-            <div class="slides" data-pg-ia-scene='{"dir":"a","smooth":"0.5","s":"whole","snap":"e","pag":"true","pag_t":".slide","pag_i":"^.slider|.slider-pagination-item","pag_pa":"Current","pag_pd":"-Current","pag_inf":"true"}' data-pg-ia-apply="$.slides" data-pg-ia='{"l":[{"trg":"now","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"overflow":"hidden"}}]}]},"name":"HideOverflowOnStart"}]}'>
+            <div class="slides" data-pg-ia-scene='{"dir":"a","s":"whole","snap":"e","pag":"true","pag_t":".slide","pag_i":"^.slider|.slider-pagination-item","pag_pa":"Current","pag_pd":"-Current","pag_inf":"true"}' data-pg-ia-apply="$.slides" data-pg-ia='{"l":[{"trg":"now","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"overflow":"hidden"}}]}]},"name":"HideOverflowOnStart"}]}'>
                 <div class="slide" style="background: linear-gradient(90deg, #ffe259, #ffa751);">
                     <h2>Slide 1</h2>
                 </div>
@@ -40,7 +40,7 @@
                     <h2>Slide 3</h2>
                 </div>
             </div>
-            <div class="slider-pagination" data-pg-ia='{"l":[{"trg":"now","a":{"n":"","l":[{"t":".slider-pagination-item","l":[{"t":"set","p":0.01,"d":0,"l":{"pgDom":{"clone":1,"count_sel":"^.slider|.slide","count":-2}}}]}]},"name":"ClonePaginationItems"}]}' data-pg-ia-apply="$.slider-pagination">
+            <div class="slider-pagination" data-pg-ia='{"l":[{"name":"ClonePaginationItems","trg":"now","a":{"n":"","l":[{"t":".slider-pagination-item","l":[{"t":"set","p":0,"d":0,"l":{"pgDom":{"clone":1,"count_sel":"^.slider|.slide","count":-2}}}]}]}}]}' data-pg-ia-apply="$.slider-pagination">
                 <a class="slider-pagination-item" data-pg-ia='{"l":[{"trg":"click","a":{"n":"","l":[{"t":"^.slider|.slides","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"item"}}}]}]},"pdef":"true","name":"ScrollToSlide"},{"name":"Current","trg":"no","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.5,"l":{"scale":1.5}}]}]}}]}' href="#" data-pg-ia-apply="$.slider-pagination-item"></a>
             </div>
             <div class="slider-controls">
