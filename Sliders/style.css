@@ -74,7 +74,13 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow: auto;
+    overflow: hidden;
+}
+
+@media (any-pointer: coarse) {
+    .slider .slides {
+        overflow: auto;
+    }
 }
 
 .slider .slide {
