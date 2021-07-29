@@ -1,3 +1,14 @@
+# Ignore Mac system files
+.DS_store
 
+# Ignore node_modules folder
+node_modules
+
+# Ignore all text files
+*.txt
+
+# Ignore SASS config files
+.sass-cache
+_pginfo
 _pgbackup
-.DS_Store
+.idea/workspace.xml

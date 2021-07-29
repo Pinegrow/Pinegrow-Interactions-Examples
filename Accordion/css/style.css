@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
 }
 
 main {
@@ -15,14 +16,21 @@ main {
     margin-right: auto;
 }
 
-.accordion--header {
+.accordion--header > button {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     user-select: none;
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
 }
 
-.accordion--header:hover {
+.accordion--header > button:hover {
     color: #cccccc;
 }

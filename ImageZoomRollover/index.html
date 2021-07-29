@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Product Image Rollover Interaction Example by Abi Rana</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="blocks.css">
+    <link href="style.css" rel="stylesheet">
+    <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+  </head>
+  <body>
+    <div class="py-5 text-center">
+      <h1 class="fw-bold">Product Image Rollover Interaction</h1>
+    </div>
+    <section class="bg-light pb-5 pt-5 text-secondary"> 
+      <div class="container pb-5 pt-5"> 
+        <div class="gy-4 row"> 
+          <div class="col-lg-4 col-md-5 mt-n5"> 
+            <div class="border border-1 mb-3 overflow-hidden position-relative" data-pg-ia='{"l":[{"name":"Activate Zoom","trg":"click","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.add":"active","cursor":"zoom-out"}}]},{"t":".prodImg","l":[{"t":"tween","p":0,"d":0.25,"l":{"scale":2}}]},{"t":"span","l":[{"t":"tween","p":0,"d":0.25,"l":{"autoAlpha":0}}]}]},"rcr":"true"},{"name":"Deactivate Zoom","trg":"click","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"active","cursor":"zoom-in"}}]},{"t":".prodImg","l":[{"t":"tween","p":0,"d":0.25,"l":{"scale":1,"xPercent":0,"yPercent":0}}]},{"t":"span","l":[{"t":"tween","p":0,"d":0.25,"l":{"autoAlpha":1}}]}]},"tc":"class","tcv":"active","rcr":"true"},{"name":"Rollover X","trg":"mousemove","mm_a":"x","soft":"0.2","a":{"l":[{"t":".prodImg","l":[{"t":"set","p":0,"d":0,"l":{"xPercent":50}},{"t":"tween","p":0,"d":0.5,"l":{"xPercent":-50}}]}]},"tc":"class","tcv":"active"},{"name":"Rollover Y","trg":"mousemove","mm_a":"y","soft":"0.2","a":{"l":[{"t":".prodImg","l":[{"t":"set","p":0,"d":0,"l":{"yPercent":50}},{"t":"tween","p":0,"d":0.5,"l":{"yPercent":-50}}]}]},"tc":"class","tcv":"active"}]}' style="cursor: zoom-in;" id="prodImgCont2">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyfHxwcm9kdWN0c3xlbnwwfHx8fDE2MjQxNzM4Mzg&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1080&h=1080&fit=crop" class="d-block img-fluid w-100 prodImg"/>
+              <span class="bg-white border bottom-0 mb-3 pb-1 pe-3 position-absolute ps-3 pt-1 rounded-md rounded-pill small start-50 text-center translate-middle-x">Click to zoom</span>
+            </div>
+            <div class="g-3 row row-cols-4">
+              <div>
+                <a href="#" data-img="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDR8fHJlZCUyMG5pa2V8ZW58MHx8fHwxNjI0MjkyNjgx&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" data-pg-ia='{"l":[{"trg":"click","a":{"l":[{"t":"$#prodImgCont2 .prodImg","l":[{"t":"set","p":0,"d":0,"l":{"attr":{"src":"${target.data-img}"}}}]}]},"pdef":"true","rcr":"true","name":"Product Img Switcher"}]}' class="prod-img-switcher" data-pg-ia-apply="$.prod-img-switcher"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDR8fHJlZCUyMG5pa2V8ZW58MHx8fHwxNjI0MjkyNjgx&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=100&h=100&fit=crop" class="border prodImg-thumb w-100"/></a>
+              </div>
+              <div>
+                <a href="#" data-img="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDF8fHJlZCUyQm5pa2V8ZW58MHx8fHwxNjI0MjkyODQ5&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1080&h=1080&fit=crop" class="prod-img-switcher"><img src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDF8fHJlZCUyQm5pa2V8ZW58MHx8fHwxNjI0MjkyODQ5&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=100&h=100&fit=crop" class="border prodImg-thumb w-100"/></a>
+              </div>
+              <div>
+                <a href="#" data-img="https://images.unsplash.com/photo-1534437088728-1e8db7fcef94?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDExfHxyZWQlMkJuaWtlfGVufDB8fHx8MTYyNDI5Mjg0OQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1080&h=1080&fit=crop" class="prod-img-switcher"><img src="https://images.unsplash.com/photo-1534437088728-1e8db7fcef94?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDExfHxyZWQlMkJuaWtlfGVufDB8fHx8MTYyNDI5Mjg0OQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=100&h=100&fit=crop" class="border prodImg-thumb w-100"/></a>
+              </div>
+              <div>
+                <a href="#" data-img="https://images.unsplash.com/photo-1593081891731-fda0877988da?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyfHxyZWQlMkJuaWtlfGVufDB8fHx8MTYyNDI5Mjg0OQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1080&h=1080&fit=crop" class="prod-img-switcher"><img src="https://images.unsplash.com/photo-1593081891731-fda0877988da?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyfHxyZWQlMkJuaWtlfGVufDB8fHx8MTYyNDI5Mjg0OQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=100&h=100&fit=crop" class="border prodImg-thumb w-100"/></a>
+              </div>
+            </div>             
+          </div>           
+          <div class="col-lg-8 col-md-7"> 
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-1">
+                <li class="breadcrumb-item">
+                  <a href="#" class="link-secondary text-decoration-none">Shop</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#" class="link-secondary text-decoration-none">Shoes</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#" class="link-secondary text-decoration-none">Nike</a>
+                </li>
+              </ol>
+            </nav>
+            <h2 class="fw-normal text-dark">Limited Edition Nike Flex Trainer Sneaker</h2>
+            <div class="mb-3">
+              <span class="me-2 text-warning"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                  </g>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                  </g>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                  </g>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                  </g>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"></path>
+                  </g>
+                </svg></span>
+              <a href="#" class="link-secondary">21 reviews</a>
+            </div>
+            <hr>
+            <div class="col-lg-6">
+              <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+            </div>
+            <p class="fs-1 text-danger">$49</p>
+            <form class="mb-3">
+              <div class="mb-4 row">
+                <label for="inputSize" class="col-form-label col-lg-2 col-md-3 col-sm-2 text-dark">Size</label>
+                <div class="col-sm-auto">
+                  <select class="form-select rounded-0" id="inputSize">
+                    <option selected>Choose an option</option>
+                    <option>31</option>
+                    <option>32</option>
+                    <option>33</option>
+                    <option>34</option>
+                    <option>35</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-4 row">
+                <label for="inputColor" class="col-form-label col-lg-2 col-md-3 col-sm-2 text-dark">Color</label>
+                <div class="col-sm-auto">
+                  <select class="form-select rounded-0" id="inputColor">
+                    <option selected>Choose an option</option>
+                    <option>Red</option>
+                    <option>Yellow</option>
+                    <option>Green</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-5 row">
+                <label for="inputQty" class="col-form-label col-lg-2 col-md-3 col-sm-2 text-dark">Quantity</label>
+                <div class="col-lg-2 col-sm-3">
+                  <input type="number" class="form-control rounded-0" id="inputQty" placeholder="1">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-danger pe-5 ps-5 rounded-0">Add To Cart</button>
+            </form>             
+          </div>           
+        </div>         
+      </div>       
+    </section>
+    <section class="bg-light pb-5 pt-5 text-secondary"> 
+      <div class="container pb-5 pt-5"> 
+        <div class="gy-4 row"> 
+          <div class="col-lg-4 col-md-5 mt-n5"> 
+            <div id="prodImgCont" class="border border-1 mb-3 overflow-hidden position-relative" data-pg-ia='{"l":[{"name":"Activate Zoom","trg":"click","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.add":"active","cursor":"zoom-out"}}]},{"t":".prodImg","l":[{"t":"tween","p":0,"d":0.25,"l":{"scale":2}}]},{"t":"span","l":[{"t":"tween","p":0,"d":0.25,"l":{"autoAlpha":0}}]}]},"rcr":"true"},{"name":"Deactivate Zoom","trg":"click","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"active","cursor":"zoom-in"}}]},{"t":".prodImg","l":[{"t":"tween","p":0,"d":0.25,"l":{"scale":1,"xPercent":0,"yPercent":0}}]},{"t":"span","l":[{"t":"tween","p":0,"d":0.25,"l":{"autoAlpha":1}}]}]},"tc":"class","tcv":"active","rcr":"true"},{"name":"Rollover X","trg":"mousemove","mm_a":"x","soft":"0.2","a":{"l":[{"t":".prodImg","l":[{"t":"set","p":0,"d":0,"l":{"xPercent":50}},{"t":"tween","p":0,"d":0.5,"l":{"xPercent":-50}}]}]},"tc":"class","tcv":"active"},{"name":"Rollover Y","trg":"mousemove","mm_a":"y","soft":"0.2","a":{"l":[{"t":".prodImg","l":[{"t":"set","p":0,"d":0,"l":{"yPercent":50}},{"t":"tween","p":0,"d":0.5,"l":{"yPercent":-50}}]}]},"tc":"class","tcv":"active"}]}' style="cursor: zoom-in;">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyfHxwcm9kdWN0c3xlbnwwfHx8fDE2MjQxNzM4Mzg&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1080&h=1080&fit=crop" class="d-block img-fluid prodImg prodImg-1 w-100"/>
+              <img src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDF8fHJlZCUyQm5pa2V8ZW58MHx8fHwxNjI0MjkyODQ5&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="bottom-0 d-block img-fluid position-absolute prodImg prodImg-2 start-0 w-100" style="visibility: hidden;"/>
+              <img src="https://images.unsplash.com/photo-1534437088728-1e8db7fcef94?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDExfHxyZWQlMkJuaWtlfGVufDB8fHx8MTYyNDI5Mjg0OQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="bottom-0 d-block img-fluid position-absolute prodImg prodImg-3 start-0 w-100" style="visibility: hidden;"/>
+              <img src="https://images.unsplash.com/photo-1593081891731-fda0877988da?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyfHxyZWQlMkJuaWtlfGVufDB8fHx8MTYyNDI5Mjg0OQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop" class="bottom-0 d-block img-fluid position-absolute prodImg prodImg-4 start-0 w-100" style="visibility: hidden;"/>
+              <span class="bg-white border bottom-0 mb-3 pb-1 pe-3 position-absolute ps-3 pt-1 rounded-md rounded-pill small start-50 text-center translate-middle-x">Click to zoom</span>
+            </div>
+            <div class="g-3 row row-cols-4">
+              <div>
+                <a href="#" data-pg-ia='{"l":[{"name":"Product Img Switch 1","trg":"click","a":{"l":[{"t":"$#prodImgCont #gt# img","l":[{"t":"set","p":0,"d":0,"l":{"attr":{"src":"https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyfHxwcm9kdWN0c3xlbnwwfHx8fDE2MjQxNzM4Mzg&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1080&h=1080&fit=crop"}}}]}]},"rcr":"true","pdef":"true"}]}' data-tag="prodImg-1"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDR8fHJlZCUyMG5pa2V8ZW58MHx8fHwxNjI0MjkyNjgx&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=100&h=100&fit=crop" class="border prodImg-thumb w-100"/></a>
+              </div>
+              <div>
+                <a href="#" data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;Product Img Switch 2&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;$#prodImgCont #gt# img&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;set&quot;,&quot;p&quot;:0,&quot;d&quot;:0,&quot;l&quot;:{&quot;attr&quot;:{&quot;src&quot;:&quot;https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDF8fHJlZCUyQm5pa2V8ZW58MHx8fHwxNjI0MjkyODQ5&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1080&h=1080&fit=crop&quot;}}}]}]},&quot;rcr&quot;:&quot;true&quot;,&quot;pdef&quot;:&quot;true&quot;}]}"><img src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDF8fHJlZCUyQm5pa2V8ZW58MHx8fHwxNjI0MjkyODQ5&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=100&h=100&fit=crop" class="border prodImg-thumb w-100"/></a>
+              </div>
+              <div>
+                <a href="#" data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;Product Img Switch 3&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;$#prodImgCont #gt# img&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;set&quot;,&quot;p&quot;:0,&quot;d&quot;:0,&quot;l&quot;:{&quot;attr&quot;:{&quot;src&quot;:&quot;https://images.unsplash.com/photo-1534437088728-1e8db7fcef94?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDExfHxyZWQlMkJuaWtlfGVufDB8fHx8MTYyNDI5Mjg0OQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1080&h=1080&fit=crop&quot;}}}]}]},&quot;rcr&quot;:&quot;true&quot;,&quot;pdef&quot;:&quot;true&quot;}]}"><img src="https://images.unsplash.com/photo-1534437088728-1e8db7fcef94?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDExfHxyZWQlMkJuaWtlfGVufDB8fHx8MTYyNDI5Mjg0OQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=100&h=100&fit=crop" class="border prodImg-thumb w-100"/></a>
+              </div>
+              <div>
+                <a href="#" data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;Product Img Switch 4&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;$#prodImgCont #gt# img&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;set&quot;,&quot;p&quot;:0,&quot;d&quot;:0,&quot;l&quot;:{&quot;attr&quot;:{&quot;src&quot;:&quot;https://images.unsplash.com/photo-1593081891731-fda0877988da?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyfHxyZWQlMkJuaWtlfGVufDB8fHx8MTYyNDI5Mjg0OQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1080&h=1080&fit=crop&quot;}}}]}]},&quot;rcr&quot;:&quot;true&quot;,&quot;pdef&quot;:&quot;true&quot;}]}"><img src="https://images.unsplash.com/photo-1593081891731-fda0877988da?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyfHxyZWQlMkJuaWtlfGVufDB8fHx8MTYyNDI5Mjg0OQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=100&h=100&fit=crop" class="border prodImg-thumb w-100"/></a>
+              </div>
+            </div>             
+          </div>           
+          <div class="col-lg-8 col-md-7"> 
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-1">
+                <li class="breadcrumb-item">
+                  <a href="#" class="link-secondary text-decoration-none">Shop</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#" class="link-secondary text-decoration-none">Shoes</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#" class="link-secondary text-decoration-none">Nike</a>
+                </li>
+              </ol>
+            </nav>
+            <h2 class="fw-normal text-dark">Limited Edition Nike Flex Trainer Sneaker</h2>
+            <div class="mb-3">
+              <span class="me-2 text-warning"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                  </g>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                  </g>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                  </g>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"></path>
+                  </g>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.125em" height="1.125em">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"></path>
+                  </g>
+                </svg></span>
+              <a href="#" class="link-secondary">21 reviews</a>
+            </div>
+            <hr>
+            <div class="col-lg-6">
+              <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+            </div>
+            <p class="fs-1 text-danger">$49</p>
+            <form class="mb-3">
+              <div class="align-items-center mb-4  row">
+                <label for="inputSize" class="col-form-label col-lg-2 col-md-3 col-sm-2 text-dark">Size</label>
+                <div class="col-sm-auto">
+                  <div class="form-check-inline me-1">
+                    <input class="btn-check" type="radio" name="radioSize" id="radioSize1" value="option1">
+                    <label class="align-items-center btn btn-outline-dark d-inline-flex rounded-0" for="radioSize1">
+                      S
+</label>
+                  </div>
+                  <div class="form-check-inline me-1">
+                    <input class="btn-check" type="radio" name="radioSize" id="radioSize2" value="option2">
+                    <label class="align-items-center btn btn-outline-dark d-inline-flex rounded-0" for="radioSize2">
+                      M
+</label>
+                  </div>
+                  <div class="form-check-inline me-1">
+                    <input class="btn-check" type="radio" name="radioSize" id="radioSize3" value="option3">
+                    <label class="align-items-center btn btn-outline-dark d-inline-flex rounded-0" for="radioSize3">
+                      L
+</label>
+                  </div>
+                  <div class="form-check-inline me-1">
+                    <input class="btn-check" type="radio" name="radioSize" id="radioSize4" value="option4">
+                    <label class="align-items-center btn btn-outline-dark d-inline-flex rounded-0" for="radioSize4">
+                      XL
+</label>
+                  </div>
+                  <div class="form-check-inline me-1">
+                    <input class="btn-check" type="radio" name="radioSize" id="radioSize5" value="option5">
+                    <label class="align-items-center btn btn-outline-dark d-inline-flex rounded-0" for="radioSize5">
+                      2XL
+</label>
+                  </div>
+                </div>
+              </div>
+              <div class="align-items-center mb-4  row">
+                <label for="inputSize" class="col-form-label col-lg-2 col-md-3 col-sm-2 text-dark">Size</label>
+                <div class="col-sm-auto">
+                  <div class="form-check-inline me-1">
+                    <input class="btn-check" type="radio" name="radioColor" id="radioColor1" value="option1">
+                    <label class="align-items-center btn btn-dark btn-outline-dark d-inline-flex p-1 p-2 rounded-circle" for="radioColor1">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="0.75rem" height="0.75rem" fill="currentColor">
+                        <path d="M256 0C115.39 0 0 115.39 0 256s115.39 256 256 256 256-115.39 256-256S396.61 0 256 0z"/>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="form-check-inline me-1">
+                    <input class="btn-check" type="radio" name="radioColor" id="radioColor2" value="option2">
+                    <label class="align-items-center btn btn-outline-primary btn-primary d-inline-flex p-1 p-2 rounded-circle" for="radioColor2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="0.75rem" height="0.75rem" fill="currentColor">
+                        <path d="M256 0C115.39 0 0 115.39 0 256s115.39 256 256 256 256-115.39 256-256S396.61 0 256 0z"/>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="form-check-inline me-1">
+                    <input class="btn-check" type="radio" name="radioColor" id="radioColor3" value="option3">
+                    <label class="align-items-center btn btn-danger btn-outline-danger d-inline-flex p-2 rounded-circle" for="radioColor3">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="0.75rem" height="0.75rem" fill="currentColor">
+                        <path d="M256 0C115.39 0 0 115.39 0 256s115.39 256 256 256 256-115.39 256-256S396.61 0 256 0z"/>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="form-check-inline me-1">
+                    <input class="btn-check" type="radio" name="radioColor" id="radioColor4" value="option4">
+                    <label class="align-items-center btn btn-outline-success btn-success d-inline-flex p-1 p-2 rounded-circle" for="radioColor4">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="0.75rem" height="0.75rem" fill="currentColor">
+                        <path d="M256 0C115.39 0 0 115.39 0 256s115.39 256 256 256 256-115.39 256-256S396.61 0 256 0z"/>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="form-check-inline me-1">
+                    <input class="btn-check" type="radio" name="radioColor" id="radioColor5" value="option5">
+                    <label class="align-items-center btn btn-outline-secondary btn-secondary d-inline-flex p-2 rounded-circle" for="radioColor5">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="0.75rem" height="0.75rem" fill="currentColor">
+                        <path d="M256 0C115.39 0 0 115.39 0 256s115.39 256 256 256 256-115.39 256-256S396.61 0 256 0z"/>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="align-items-center mb-5 row">
+                <label for="inputQty" class="col-form-label col-lg-2 col-md-3 col-sm-2 text-dark">Quantity</label>
+                <div class="col-lg-2 col-sm-3">
+                  <input type="number" class="form-control rounded-0" id="inputQty" placeholder="1">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-danger pe-5 ps-5 rounded-0">Add To Cart</button>
+            </form>             
+          </div>           
+        </div>         
+      </div>       
+    </section>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <div class="py-5"></div>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="pgia/lib/pgia.js"></script>
+  </body>
+</html>

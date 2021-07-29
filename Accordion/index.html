@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Custom Accordion with Pinegrow</title>
-        <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,600,500,400&display=swap">
-        <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
-    </head>
-    <body>
-        <main>
-            <h1>Custom Accordion with Pinegrow</h1>
-            <p>Accordion is the domain of fiction; events in this book will stand apart from the usual well-worn and well-loved tales. Though the story of the Ayura Plane is not part of their world, there are elements of the situation that will resonate with readers.</p>
-            <section class="accordion">
-                <div class="accordion--item">
-                    <div class="accordion--header" data-pg-ia='{"l":[{"trg":"click","trev":"true","a":{"n":"","l":[{"t":"^.accordion--item | .accordion--content","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":1,"y":"0"}}]},{"t":".accordion--icon","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":"45"}}]}]}}]}' data-pg-ia-apply="$.accordion--header">
-                        <h3>Section 1</h3>
-                        <img src="assets/icon-add.png" class="accordion--icon"/>
-                    </div>
-                    <div class="accordion--content" data-pg-ia-apply="$.accordion--content" data-pg-ia='{"l":[{"trg":"now","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"display":"none","y":"-20px"}}]}]}}]}' data-pg-ia-hide>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin neque diam, ac rutrum est sagittis at. Etiam in luctus odio. Aenean at sodales mi. Etiam laoreet, tellus et euismod dignissim, arcu mauris feugiat diam, vel commodo dui est id ante. Aliquam erat volutpat. Nam urna lacus, molestie ut nulla vel, vestibulum vehicula leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam nulla elit, ullamcorper ornare pharetra nec, posuere vel turpis. Proin a tincidunt mauris, quis tempus enim. In hac habitasse platea dictumst. Etiam nibh neque, egestas quis tincidunt in, aliquet id lorem.</p>
-                    </div>
-                </div>
-                <div class="accordion--item"> 
-                    <div class="accordion--header">
-                        <h3>Section 2</h3>
-                        <img src="assets/icon-add.png" class="accordion--icon"/>
-                    </div>
-                    <div class="accordion--content">
-                        <p>Vestibulum at velit a lectus molestie viverra. Quisque semper consequat aliquam. Pellentesque ante enim, pharetra at ligula eu, condimentum sollicitudin felis. Praesent tempus odio id rhoncus fringilla. Suspendisse sed arcu vel turpis accumsan iaculis. Duis dapibus ipsum nec dapibus mollis. Ut nec rhoncus massa.</p>
-                        <ul>
-                            <li>List item 1</li>
-                            <li>List item 2</li>
-                            <li>List item 3</li>
-                            <li>List item 4</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="accordion--item"> 
-                    <div class="accordion--header">
-                        <h3>Section 3</h3>
-                        <img src="assets/icon-add.png" class="accordion--icon"/>
-                    </div>
-                    <div class="accordion--content">
-                        <p>Aenean in mattis nisi, quis tincidunt lacus. Curabitur malesuada imperdiet nisl sed vestibulum. Etiam placerat pretium metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer libero orci, efficitur non ex eu, convallis consequat purus. Donec nec fermentum nisl, a scelerisque mi. Vivamus aliquet quis arcu nec ultricies. Suspendisse non mi quis arcu condimentum imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                        <img src="http://pinegrow.com/placeholders/img13.jpg" width="400px"/>
-                    </div>
-                </div>
-                <div class="accordion--item"> 
-                    <div class="accordion--header">
-                        <h3>Section 4</h3>
-                        <img src="assets/icon-add.png" class="accordion--icon"/>
-                    </div>
-                    <div class="accordion--content">
-                        <p>Suspendisse vestibulum fermentum neque eget malesuada. Phasellus porta luctus nunc vel mollis. Praesent hendrerit aliquam mauris, vitae elementum nisi ullamcorper ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In a sapien a nisi viverra tincidunt eu a dui. Proin turpis mauris, consectetur in mi nec, laoreet mattis tortor. Etiam eget tincidunt nibh. In ut sem nibh. Nunc sodales dictum magna eu euismod. Aenean sed elementum est, ac lobortis nisi. Pellentesque sed nunc sed orci mattis pretium nec et ipsum. Nulla ac sapien ultrices, sollicitudin dui eget, lobortis libero. Duis et diam lorem.</p>
-                        <p>Morbi non vulputate augue. Vestibulum non diam a nisi fringilla rutrum. Ut viverra tempus neque et imperdiet. Mauris vel neque quis ipsum rhoncus dictum. Aliquam eu arcu nisi. Vivamus commodo dolor metus, eget varius orci tincidunt nec. Nunc orci lorem, luctus ac dictum sed, vehicula porta metus. In hac habitasse platea dictumst. Praesent lobortis efficitur blandit. Nam tempus elit eu arcu vehicula condimentum. Morbi at fermentum sapien, eget pharetra mi. Donec vulputate lacus id urna vulputate, eu ultrices nulla aliquet. Suspendisse nec fringilla metus. Donec finibus scelerisque tristique.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <script type="text/javascript" src="pgia/lib/pgia.js"></script>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Custom Accordion with Pinegrow</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,600,500,400&display=swap">
+    <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
+  </head>
+  <body>
+    <main>
+      <h1>Custom Accordion with Pinegrow</h1>
+      <p>Accordion is the domain of fiction; events in this book will stand apart from the usual well-worn and well-loved tales. Though the story of the Ayura Plane is not part of their world, there are elements of the situation that will resonate with readers.</p>
+      <section class="accordion">
+        <div class="accordion--item">
+          <h2 data-pg-ia='{"l":[{"trg":"click","a":{"l":[{"t":"^.accordion--item | .accordion--content","l":[{"t":"set","p":0,"d":0,"l":{"display":"block","overflow":"hidden","height":0,"y":"-20px"}},{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":1,"y":0,"height":"auto"}}]},{"t":".accordion--icon","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":45}}]}]},"pdef":"true","trev":"true","name":"Reveal on Click"}]}' data-pg-ia-apply="$.accordion--header" class="accordion--header"> <button type="button">
+              <span>Section 1</span>
+              <img src="assets/icon-add.png" class="accordion--icon"/>
+            </button> </h2>
+          <div class="accordion--content" data-pg-ia-apply="$.accordion--content" data-pg-ia='{"l":[{"trg":"now","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}}]}]},"name":"Hide on Load"}]}' data-pg-ia-hide>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin neque diam, ac rutrum est sagittis at. Etiam in luctus odio. Aenean at sodales mi. Etiam laoreet, tellus et euismod dignissim, arcu mauris feugiat diam, vel commodo dui est id ante. Aliquam erat volutpat. Nam urna lacus, molestie ut nulla vel, vestibulum vehicula leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam nulla elit, ullamcorper ornare pharetra nec, posuere vel turpis. Proin a tincidunt mauris, quis tempus enim. In hac habitasse platea dictumst. Etiam nibh neque, egestas quis tincidunt in, aliquet id lorem.</p>
+          </div>
+        </div>
+        <div class="accordion--item"> 
+          <h2 class="accordion--header"> <button type="button">
+              <span>Section 2</span>
+              <img src="assets/icon-add.png" class="accordion--icon"/>
+            </button> </h2>
+          <div class="accordion--content">
+            <p>Vestibulum at velit a lectus molestie viverra. Quisque semper consequat aliquam. Pellentesque ante enim, pharetra at ligula eu, condimentum sollicitudin felis. Praesent tempus odio id rhoncus fringilla. Suspendisse sed arcu vel turpis accumsan iaculis. Duis dapibus ipsum nec dapibus mollis. Ut nec rhoncus massa.</p>
+            <ul>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+              <li>List item 4</li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion--item"> 
+          <h2 class="accordion--header"> <button type="button">
+              <span>Section 3</span>
+              <img src="assets/icon-add.png" class="accordion--icon"/>
+            </button> </h2>
+          <div class="accordion--content">
+            <p>Aenean in mattis nisi, quis tincidunt lacus. Curabitur malesuada imperdiet nisl sed vestibulum. Etiam placerat pretium metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer libero orci, efficitur non ex eu, convallis consequat purus. Donec nec fermentum nisl, a scelerisque mi. Vivamus aliquet quis arcu nec ultricies. Suspendisse non mi quis arcu condimentum imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <img src="http://pinegrow.com/placeholders/img13.jpg" width="400" height="225"/>
+          </div>
+        </div>
+        <div class="accordion--item"> 
+          <h2 class="accordion--header"> <button type="button">
+              <span>Section 4</span>
+              <img src="assets/icon-add.png" class="accordion--icon"/>
+            </button> </h2>
+          <div class="accordion--content">
+            <p>Suspendisse vestibulum fermentum neque eget malesuada. Phasellus porta luctus nunc vel mollis. Praesent hendrerit aliquam mauris, vitae elementum nisi ullamcorper ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In a sapien a nisi viverra tincidunt eu a dui. Proin turpis mauris, consectetur in mi nec, laoreet mattis tortor. Etiam eget tincidunt nibh. In ut sem nibh. Nunc sodales dictum magna eu euismod. Aenean sed elementum est, ac lobortis nisi. Pellentesque sed nunc sed orci mattis pretium nec et ipsum. Nulla ac sapien ultrices, sollicitudin dui eget, lobortis libero. Duis et diam lorem.</p>
+            <p>Morbi non vulputate augue. Vestibulum non diam a nisi fringilla rutrum. Ut viverra tempus neque et imperdiet. Mauris vel neque quis ipsum rhoncus dictum. Aliquam eu arcu nisi. Vivamus commodo dolor metus, eget varius orci tincidunt nec. Nunc orci lorem, luctus ac dictum sed, vehicula porta metus. In hac habitasse platea dictumst. Praesent lobortis efficitur blandit. Nam tempus elit eu arcu vehicula condimentum. Morbi at fermentum sapien, eget pharetra mi. Donec vulputate lacus id urna vulputate, eu ultrices nulla aliquet. Suspendisse nec fringilla metus. Donec finibus scelerisque tristique.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="pgia/lib/pgia.js"></script>
+  </body>
 </html>
