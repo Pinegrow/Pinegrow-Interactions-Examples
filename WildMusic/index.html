@@ -1,212 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>WildMusic - template for Adding Web Interactions | Pinegrow Web Editor</title>
-        <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.4.0/fonts/remixicon.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,300,500,600,700,800,900&display=swap">
-        <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
-    </head>
-    <body>
-        <main class="bg-black">
-            <nav class="bg-black fixed-top navbar navbar-dark navbar-expand-lg" data-pg-ia-hide data-pg-collapsed> 
-                <div class="container">
-                    <a class="navbar-brand" href="#">WildMusic</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler8" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
-                        <span class="navbar-toggler-icon"></span> 
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarToggler8"> 
-                        <ul class="ml-auto mt-2 mt-lg-0 navbar-nav"> 
-                            <li class="active nav-item"> 
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> 
-                            </li>                             
-                            <li class="nav-item"> 
-                                <a class="nav-link" href="#">Events</a> 
-                            </li>
-                            <li class="nav-item"> 
-                                <a class="nav-link" href="#">Artists</a> 
-                            </li>
-                            <li class="nav-item"> 
-                                <a class="nav-link" href="#">Tickets</a> 
-                            </li>
-                            <li class="nav-item"> 
-                                <a class="nav-link" href="#">Contact</a> 
-                            </li>                             
-                        </ul>                         
-                    </div>
-                </div>                 
-            </nav>
-            <section class="banner-section min-vh-100" data-pg-ia-scene='{"smooth":"0.5s","d":"50%","pin":"true","l":[{"t":".banner-overlay","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":1,"scale":1}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0,"scale":20},"e":"Linear.easeNone"},{"t":"set","p":0.01,"d":0,"l":{"class.add":"in-scroll"}}]}],"desc":"We need to place Set AddClass in-scroll a bit after 0 so that the class gets removed when we scroll back to 0."}},{"t":"$nav","a":"fadeIn","s":"100","p":"time","t_d":"0.25","rev":"true"}],"s":"onEnter"}'>
-                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="banner-image"/>
-                <div class="banner-overlay d-flex flex-column min-vh-100">
-                    <div class="bg-black flex-fill"></div>
-                    <img src="assets/images/text%20effect.svg" class="banner-text img-fluid" data-pg-ia='{"l":[{"trg":"mouseenter","mm_a":"run","t":"$.banner-section &gt; div.banner-overlay","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.2,"l":{"opacity":0},"e":"Quad.easeIn"}]}]},"tc":"no-class","tcv":"in-scroll","rstr":"true"},{"trg":"mouseleave","t":"$.banner-section &gt; div.banner-overlay","tc":"no-class","tcv":"in-scroll","rstr":"true","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.3,"l":{"opacity":1}}]}]}}]}'/>
-                    <div class="bg-black flex-fill"></div>
-                </div>
-            </section>
-            <section class="py-5 text-center text-white">
-                <div class="container py-5">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h4>WildMusic provides global representation to a diverse and dynamic lineup of music artists, collaborating with the most promising up and coming talents on the global market, bringing together the world&apos;s most promising electronic artists on a mission to live the life of a musical nomad and always remain connected with their audience and home countries.</h4> 
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="event-section py-5 text-white" data-pg-ia-scene='{"s":"onEnter","l":[{"t":".floating-title","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"-50vh"},"e":"Linear.easeNone"}]}]}},{"a":"fadeInUp","s":"20","p":"time","t_d":"0.5","t":".event-details"}]}'>
-                <h2 class="floating-title">Upcoming Events</h2>
-                <div class="container py-5">
-                    <div class="align-items-center row">
-                        <div class="col-lg-7 event-details mb-5 order-lg-2" data-pg-ia-hide>
-                            <p>It was a nice hybrid approach to music, where , probably, some of the riffing was a little too obvious,&quot; said Thielemann. &quot;Some parts are really elegant but a lot of times the chord progression is kind of ridiculous, and people may be doing it on purpose. It&apos;s more embarrassing than anything.&quot; The results, added McLeod, are sound, but that&apos;s not what excites Thielemann.</p>
-                            <a href="" class="see-more">Buy Tickets</a>
-                        </div>
-                        <div class="col-lg-5 order-lg-1">
-                            <a href="#" class="d-block event-main-link p-4"> <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Spicy with the Jack Pinetree band &amp; Friends</h4><span>02-12-2019</span> </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid h-scrolling-block mb-lg-5 overflow-hidden py-lg-5" data-pg-ia-scene='{"s":"onEnter","l":[{"t":"this","a":{"n":"","l":[{"t":".row","l":[{"t":"tween","p":0,"d":1,"l":{"x":"-100vh"},"e":"Linear.easeNone"}]}]}}]}'>
-                    <div class="flex-nowrap no-gutters row">
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1462965326201-d02e4f455804?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1488036106564-87ecb155bb15?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="event-section py-5 text-right text-white" data-pg-ia-scene='{"l":[{"a":"fadeInUp","s":"20","p":"time","sc_d":"0.5","t_d":"0.5","t":".event-details"}]}'>
-                <div class="container py-5">
-                    <div class="align-items-center row">
-                        <div class="col-lg-7 event-details mb-5" data-pg-ia-hide>
-                            <p>GRAMMY Award-winning, legendary musician Pinos Forrest and will embark on a seven-date journey through North America.The music-minded crew from La Boy Tere día d&apos;etre moves to Santa Fe for a celebration of their biggest hit, &quot;Pins&quot; (2013), their amazing recording of &quot;The Story of Little Feat&quot; (featuring Jesse McCartney and Ned Rockwell), and a new album, where the ensemble will work to deliver an emotional, epic and supercharged symphony</p>
-                            <a href="" class="see-more">Buy Tickets</a>
-                        </div>
-                        <div class="col-lg-5">
-                            <a href="#" class="d-block event-main-link p-4"> <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Miraculous &amp; Cool<br>2020 Tour</h4><span>02-12-2019</span> </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid h-scrolling-block mb-lg-5 overflow-hidden py-lg-5" data-pg-ia-scene='{"s":"onEnter","l":[{"t":"this","a":{"n":"","l":[{"t":".row","l":[{"t":"tween","p":0,"d":1,"l":{"x":"100vh"},"e":"Linear.easeNone"}]}]}}]}'>
-                    <div class="flex-nowrap justify-content-end no-gutters row">
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1462965326201-d02e4f455804?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1488036106564-87ecb155bb15?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                        <div class="col-3">
-                            <img src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="py-5 recent-event-section text-white" data-pg-ia-scene='{"s":"onEnter","l":[{"t":".floating-title","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"-50vh"},"e":"Linear.easeNone"}]}]}},{"t":".event-link","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0,"transition":"none"}},{"t":"tween","p":0,"d":1,"s":0.25,"l":{"autoAlpha":1}}]}]},"p":"time","s":"20"}]}'>
-                <h2 class="floating-title">Recent Events</h2>
-                <div class="container py-5">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Larry Pineapple - The Road is Straight and Runs Ahead Tour</h4> </a>
-                        </div>
-                        <div class="col-lg-6 pt-lg-5">
-                            <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Blimp McGregor - Why is the Bus Late Again?</h4> </a>
-                        </div>
-                        <div class="col-lg-6">
-                            <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Cones Part 2 - The Return of the One Who Left</h4> </a>
-                        </div>
-                        <div class="col-lg-6 pt-lg-5">
-                            <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1525362081669-2b476bb628c3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Blake Hiccup and the Famous Unknowns Live</h4> </a>
-                        </div>
-                    </div>
-                    <div class="mt-4 text-center">
-                        <a href="" class="see-more">View All</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="py-5">
-            <div class="container py-5">
-                <div class="align-items-center row">
-                    <div class="col-md">
-                        <h2 class="font-weight-bold">Get In Touch</h2>
-                        <h5>info@wildmusic.com</h5>
-                    </div>
-                    <div class="col-md-auto">
-                        <ul class="nav social-links"> 
-                            <li class="nav-item"> 
-                                <a class="nav-link active" href="#"> <i class="ri-facebook-fill"></i> </a> 
-                            </li>                             
-                            <li class="nav-item"> 
-                                <a class="nav-link" href="#"> <i class="ri-twitter-fill"></i> </a> 
-                            </li>                             
-                            <li class="nav-item"> 
-                                <a class="nav-link" href="#"> <i class="ri-instagram-fill"></i> </a> 
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>WildMusic - template for Adding Web Interactions | Pinegrow Web Editor</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.4.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,300,500,600,700,800,900&display=swap">
+    <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
+  </head>
+  <body>
+    <main class="bg-black">
+      <nav class="bg-black fixed-top navbar navbar-dark navbar-expand-lg" data-pg-ia-hide> 
+        <div class="container">
+          <a class="navbar-brand" href="#">WildMusic</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler8" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span> 
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler8"> 
+            <ul class="ml-auto mt-2 mt-lg-0 navbar-nav"> 
+              <li class="active nav-item"> 
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> 
+              </li>               
+              <li class="nav-item"> 
+                <a class="nav-link" href="#">Events</a> 
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link" href="#">Artists</a> 
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link" href="#">Tickets</a> 
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link" href="#">Contact</a> 
+              </li>               
+            </ul>             
+          </div>
+        </div>         
+      </nav>
+      <section class="banner-section min-vh-100" data-pg-ia-scene='{"smooth":"0.5s","d":"50%","pin":"true","l":[{"t":".banner-overlay","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":1,"scale":1}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0,"scale":20},"e":"Linear.easeNone"},{"t":"set","p":0.01,"d":0,"l":{"class.add":"in-scroll"}}]}],"desc":"We need to place Set AddClass in-scroll a bit after 0 so that the class gets removed when we scroll back to 0."}},{"t":"$nav","a":"fadeIn","s":"100","p":"time","t_d":"0.25","rev":"true"}],"s":"onEnter"}'>
+        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="banner-image"/>
+        <div class="banner-overlay d-flex flex-column min-vh-100">
+          <div class="bg-black flex-fill"></div>
+          <img src="assets/images/text%20effect.svg" class="banner-text img-fluid" data-pg-ia='{"l":[{"trg":"mouseenter","mm_a":"run","t":"$.banner-section &gt; div.banner-overlay","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.2,"l":{"opacity":0},"e":"Quad.easeIn"}]}]},"tc":"no-class","tcv":"in-scroll","rstr":"true"},{"trg":"mouseleave","t":"$.banner-section &gt; div.banner-overlay","tc":"no-class","tcv":"in-scroll","rstr":"true","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":0.3,"l":{"opacity":1}}]}]}}]}'/>
+          <div class="bg-black flex-fill"></div>
+        </div>
+      </section>
+      <section class="py-5 text-center text-white">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h4>WildMusic provides global representation to a diverse and dynamic lineup of music artists, collaborating with the most promising up and coming talents on the global market, bringing together the world&apos;s most promising electronic artists on a mission to live the life of a musical nomad and always remain connected with their audience and home countries.</h4> 
             </div>
-        </footer>
-        <button id="go-to-top" class="go-to-top">
-            <i class="ri-arrow-up-s-line"></i>
-        </button>
-        <!-- Bootstrap core JavaScript
+          </div>
+        </div>
+      </section>
+      <section class="event-section py-5 text-white" data-pg-ia-scene='{"s":"onEnter","l":[{"t":".floating-title","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"-50vh"},"e":"Linear.easeNone"}]}]}},{"a":"fadeInUp","s":"20","p":"time","t_d":"0.5","t":".event-details"}]}'>
+        <h2 class="floating-title">Upcoming Events</h2>
+        <div class="container py-5">
+          <div class="align-items-center row">
+            <div class="col-lg-7 event-details mb-5 order-lg-2" data-pg-ia-hide>
+              <p>It was a nice hybrid approach to music, where , probably, some of the riffing was a little too obvious,&quot; said Thielemann. &quot;Some parts are really elegant but a lot of times the chord progression is kind of ridiculous, and people may be doing it on purpose. It&apos;s more embarrassing than anything.&quot; The results, added McLeod, are sound, but that&apos;s not what excites Thielemann.</p>
+              <a href="" class="see-more">Buy Tickets</a>
+            </div>
+            <div class="col-lg-5 order-lg-1">
+              <a href="#" class="d-block event-main-link p-4"> <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Spicy with the Jack Pinetree band &amp; Friends</h4><span>02-12-2019</span> </a>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid h-scrolling-block mb-lg-5 overflow-hidden py-lg-5" data-pg-ia-scene='{"s":"onEnter","l":[{"t":"this","a":{"n":"","l":[{"t":".row","l":[{"t":"tween","p":0,"d":1,"l":{"x":"-100vh"},"e":"Linear.easeNone"}]}]}}]}'>
+          <div class="flex-nowrap no-gutters row">
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1462965326201-d02e4f455804?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1488036106564-87ecb155bb15?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="event-section py-5 text-right text-white" data-pg-ia-scene='{"l":[{"a":"fadeInUp","s":"20","p":"time","sc_d":"0.5","t_d":"0.5","t":".event-details"}]}'>
+        <div class="container py-5">
+          <div class="align-items-center row">
+            <div class="col-lg-7 event-details mb-5" data-pg-ia-hide>
+              <p>GRAMMY Award-winning, legendary musician Pinos Forrest and will embark on a seven-date journey through North America.The music-minded crew from La Boy Tere día d&apos;etre moves to Santa Fe for a celebration of their biggest hit, &quot;Pins&quot; (2013), their amazing recording of &quot;The Story of Little Feat&quot; (featuring Jesse McCartney and Ned Rockwell), and a new album, where the ensemble will work to deliver an emotional, epic and supercharged symphony</p>
+              <a href="" class="see-more">Buy Tickets</a>
+            </div>
+            <div class="col-lg-5">
+              <a href="#" class="d-block event-main-link p-4"> <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Miraculous &amp; Cool<br>2020 Tour</h4><span>02-12-2019</span> </a>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid h-scrolling-block mb-lg-5 overflow-hidden py-lg-5" data-pg-ia-scene='{"s":"onEnter","l":[{"t":"this","a":{"n":"","l":[{"t":".row","l":[{"t":"tween","p":0,"d":1,"l":{"x":"100vh"},"e":"Linear.easeNone"}]}]}}]}'>
+          <div class="flex-nowrap justify-content-end no-gutters row">
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1462965326201-d02e4f455804?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1488036106564-87ecb155bb15?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+            <div class="col-3">
+              <img src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 recent-event-section text-white" data-pg-ia-scene='{"s":"onEnter","l":[{"t":".floating-title","a":{"n":"","l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"-50vh"},"e":"Linear.easeNone"}]}]}},{"t":".event-link","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0,"transition":"none"}},{"t":"tween","p":0,"d":1,"s":0.25,"l":{"autoAlpha":1}}]}]},"p":"time","s":"20"}]}'>
+        <h2 class="floating-title">Recent Events</h2>
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-6">
+              <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Larry Pineapple - The Road is Straight and Runs Ahead Tour</h4> </a>
+            </div>
+            <div class="col-lg-6 pt-lg-5">
+              <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Blimp McGregor - Why is the Bus Late Again?</h4> </a>
+            </div>
+            <div class="col-lg-6">
+              <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Cones Part 2 - The Return of the One Who Left</h4> </a>
+            </div>
+            <div class="col-lg-6 pt-lg-5">
+              <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1525362081669-2b476bb628c3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4"/> <h4>Blake Hiccup and the Famous Unknowns Live</h4> </a>
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <a href="" class="see-more">View All</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="py-5">
+      <div class="container py-5">
+        <div class="align-items-center row">
+          <div class="col-md">
+            <h2 class="font-weight-bold">Get In Touch</h2>
+            <h5>info@wildmusic.com</h5>
+          </div>
+          <div class="col-md-auto">
+            <ul class="nav social-links"> 
+              <li class="nav-item"> 
+                <a class="nav-link active" href="#"> <i class="ri-facebook-fill"></i> </a> 
+              </li>               
+              <li class="nav-item"> 
+                <a class="nav-link" href="#"> <i class="ri-twitter-fill"></i> </a> 
+              </li>               
+              <li class="nav-item"> 
+                <a class="nav-link" href="#"> <i class="ri-instagram-fill"></i> </a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button id="go-to-top" class="go-to-top">
+      <i class="ri-arrow-up-s-line"></i>
+    </button>
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
             $('#go-to-top').click(function (event) {
                 event.preventDefault();
                 jQuery('html, body').animate({scrollTop: 0}, 1000);
                 return false;
             })
         </script>
-        <script type="text/javascript" src="file://Users/Matjaz/Dropbox/Development/DVWeb/DV/Pinegrow/PinegrowCodeDevTools/frameworks/pg.animations/resources/pgia/lib/pgia_lib.js"></script>
-        <script type="text/javascript" src="file://Users/Matjaz/Dropbox/Development/DVWeb/DV/Pinegrow/PinegrowCodeDevTools/frameworks/pg.animations/resources/pgia/lib/pgia_dev.js"></script>
-    </body>
+    <script type="text/javascript" src="pgia/lib/pgia.js"></script>
+  </body>
 </html>
