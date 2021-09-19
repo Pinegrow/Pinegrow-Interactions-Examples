@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+    <link href="bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Image Zoom + Rollover Interaction</h1>
+    <p class="lead">You can use this interactive block on your prodcuts page, this helps users to have more clear view of the product. You can even use this as an image gallery, here you can even zoom into the image.</p>
+    <h2>How it works</h2>
+    <p>The <code data-pginfo-select="section">section</code> element contains the whole layout with the product details, order form and the product viewer. Product viewer is the main interactive block that we are going to deal with.</p>
+    <p>Product viewer <code data-pginfo-select="div.prodPreviewBlock">div.prodPreviewBlock</code> is in the first column, this includes 2 blocks one for the main preview image and another for the links with the thumbnail. First block is <code data-pginfo-select="div.prodImgContainer">div.prodImgContainer</code> which has the main image <code data-pginfo-select="img.prodImg">img.prodImg</code> and another <code data-pginfo-select="div.prodPreviewBlock span">span</code> elment with the text&nbsp;<i>Click to zoom</i>. And second block has 4 columns, each one has a link <code data-pginfo-select="a.prodImgSwitcher">a.prodImgSwitcher</code> including an thumbnail image. This will work as an interactive block to change the main product image.</p>
+    <img src="https://media.pinegrow.online/7/387/images/image-zoom-rollover-interaction-tree-1.jpg">
+    <h3>Adding Zoom Interaction to Main Image</h3>
+    <p>For the main product image interaction is added on&nbsp;<code data-pginfo-select="div.prodImgContainer">div.prodImgContainer</code>, it has <span data-pginfo-select="div.prodImgContainer" data-pginfo-animation="animation-action" data-pginfo-select-no-reveal="true">Activate Zoom interaction</span> that is triggered with a click.</p>
+    <img src="https://media.pinegrow.online/7/387/images/activate-zoom.jpg">
+    <p><span data-pginfo-select="div.prodImgContainer" data-pginfo-animation="animation-action" data-pginfo-animation-index="1" data-pginfo-animation-edit="true" data-pginfo-select-no-reveal="true">Activate Zoom interaction</span>&nbsp;is triggered on click that zooms the image <code data-pginfo-select="img.prodImg">img.prodImg</code> and hides <code data-pginfo-select="div.prodPreviewBlock span">span</code> elment with the text&nbsp;<i>Click to zoom</i>. This also adds class <b>active</b> on the <code data-pginfo-select="div.prodImgContainer">div.prodImgContainer</code> and also change the <b>cursor to zoom-out</b>.</p>
+    <img src="https://media.pinegrow.online/7/387/images/activate-zoom-animation.jpg">
+    <blockquote>Adding class active will help create a trigger condition that helps other interactions.</blockquote>
+    <h3>Deactivaing Zoom on Main Image</h3>
+    <p><code data-pginfo-select="div.prodImgContainer">div.prodImgContainer</code>&nbsp;has another interaction <span data-pginfo-select="div.prodImgContainer" data-pginfo-animation="animation-action" data-pginfo-animation-index="2" data-pginfo-animation-edit="true" data-pginfo-select-no-reveal="true">Deactivate Zoom interaction</span> that is triggered with a click but only when image zoom is active. This is done by setting <b>Trigger condition</b> to <b>has class</b>&nbsp;when class <b>active</b> is applied. Class <b>active</b> is applied when <span data-pginfo-select="div.prodImgContainer" data-pginfo-animation="animation-action" data-pginfo-animation-index="1" data-pginfo-animation-edit="true" data-pginfo-select-no-reveal="true">Activate Zoom interaction</span> is triggered.</p>
+    <img src="https://media.pinegrow.online/7/387/images/deactivate-zoom.jpg">
+    <p><span data-pginfo-select="div.prodImgContainer" data-pginfo-animation="animation-action" data-pginfo-animation-index="2" data-pginfo-animation-edit="true" data-pginfo-select-no-reveal="true">Deactivate Zoom interaction</span>&nbsp;has animation that resets the zoom on the image <code data-pginfo-select="img.prodImg">img.prodImg</code> and displays back&nbsp;<code data-pginfo-select="div.prodPreviewBlock span">span</code> elment with the text&nbsp;<i>Click to zoom</i>. This also removes the class <b>active</b> on the <code data-pginfo-select="div.prodImgContainer">div.prodImgContainer</code> and also change the <b>cursor to zoom-in</b>.</p>
+    <img src="https://media.pinegrow.online/7/387/images/deactivate-zoom-animation.jpg">
+    <h3>Adding Rollover Interaction</h3>
+    <p>Rollover animation also has 2 interactions, one when moving on X axis and another for Y axis. This is only triggered when zoom is active, for that <b>Trigger condition</b> is set to <b>has class</b>&nbsp;and <b>Trigger condition value</b> is&nbsp;<b>active</b>.</p>
+    <img src="https://media.pinegrow.online/7/387/images/rollover-x.jpg">
+    <p><span data-pginfo-select="div.prodImgContainer" data-pginfo-animation="animation-action" data-pginfo-animation-index="3" data-pginfo-animation-edit="true" data-pginfo-select-no-reveal="true">Rollover X interaction</span>&nbsp;has animation set on&nbsp;<code data-pginfo-select="img.prodImg">img.prodImg</code>&nbsp;which makes it move on the x-axis from. positive 50% to negative 50%.</p>
+    <img src="https://media.pinegrow.online/7/387/images/rollover-x-animation.jpg">
+    <p>Same is done with Y axis, <span data-pginfo-select="div.prodImgContainer" data-pginfo-animation="animation-action" data-pginfo-animation-index="4" data-pginfo-animation-edit="true" data-pginfo-select-no-reveal="true">Rollover Y interaction</span>&nbsp;has animation which makes it move on the y-axis from. positive 50% to negative 50%.</p>
+    <img src="https://media.pinegrow.online/7/387/images/rollover-y.jpg">
+    <img src="https://media.pinegrow.online/7/387/images/rollover-y-animation.jpg">
+    <h3>Image Change Interaction</h3>
+    <p>Besides zoom and rollover inateraction, we&apos;ve <span data-pginfo-select="a.prodImgSwitcher" data-pginfo-animation="animation-action" data-pginfo-animation-index="1" data-pginfo-animation-edit="true" data-pginfo-select-no-reveal="true">Product Img Switcher</span> interaction that helps to change and view other images aswell.</p>
+    <p>First of all each links with the thumbnails has data-img properties, where link to the main image is set. This will be later used to set on the main image with interaction.</p>
+    <img src="https://media.pinegrow.online/7/387/images/product-img-switcher.jpg">
+    <p>First animation is set on <code data-pginfo-select="div.prodImgContainer">div.prodImgContainer</code> that triggers <span data-pginfo-select="div.prodImgContainer" data-pginfo-animation="animation-action" data-pginfo-animation-index="2" data-pginfo-animation-edit="true" data-pginfo-select-no-reveal="true">Deactivate Zoom</span> interaction. And another is applied on <code data-pginfo-select="img.prodImg">img.prodImg</code> which updates the value of <b>src</b> where the value is extracted from the link with <b>${target.data-img}</b>.</p>
+    <img src="https://media.pinegrow.online/7/387/images/product-img-switcher-animation.jpg">
+    <p>Lastly <span data-pginfo-select="a.prodImgSwitcher" data-pginfo-animation="animation-apply" data-pginfo-animation-edit="true" data-pginfo-select-no-reveal="true">Apply to many</span> is set on the first&nbsp;<code data-pginfo-select="a.prodImgSwitcher">a.prodImgSwitcher</code> because we've multiple thumbnails, so single interaction works on all.</p>
+    <img src="https://media.pinegrow.online/7/387/images/product-img-switcher-applyto-many.jpg">
+  </body>
+</html>
