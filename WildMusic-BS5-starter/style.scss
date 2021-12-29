@@ -1,0 +1,160 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+nav.navbar {
+    border-bottom: 1px solid #333;
+}
+
+.banner-section {
+    position: relative;
+    overflow: hidden;
+}
+
+img.banner-image {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.banner-text {
+    margin: -5px 0;
+}
+
+.floating-title {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    font-size: 17vmin;
+    font-weight: 800;
+    opacity: 0.1;
+    max-width: 900px;
+    z-index: -2;
+    transform: translateX(-50%);
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+a.event-main-link {
+    background: white;
+    color: black;
+    transition: all 0.3s ease;
+
+    img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &:hover {
+        background: linear-gradient(to right, #b92b27, #1565c0);
+        background-color: gray;
+        color: white;
+    }
+}
+
+a.event-link {
+    color: white;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: black;
+        background-color: white;
+    }
+
+    img {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+a.see-more {
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 0.3rem 1rem;
+    transition: all 0.2s ease;
+    border: 2px solid white;
+
+    &:hover {
+        background: black;
+        color: white;
+    }
+
+    &.btn-big {
+        font-size: 1.25rem;
+        padding: 0.5rem 1.2rem;
+    }
+}
+
+.h-scrolling-block {
+    width: 100%;
+
+    @media (min-width: 992px){
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    >.row {
+        min-width: 1200px;
+    }
+
+    img {
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
+        padding: 10px;
+        transition: all 0.3s ease;
+    }
+}
+
+.social-links {
+    a {
+        font-size: 1.5rem;
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+
+        &:hover {
+            color: black;
+            background-color: white;
+        }
+    }
+}
+
+.go-to-top {
+    position: fixed;
+    right: 50%;
+    bottom: 0px;
+    transform: translateX(50%);
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0rem 0.5rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+        color: white;
+        background-color: #555;
+    }
+}

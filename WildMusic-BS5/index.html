@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>WildMusic - template for Adding Web Interactions | Pinegrow Web Editor</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap"/>
+        <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+    </head>
+    <body class="bg-black" id="go-to-top">
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <header class="fixed-top">
+            <nav class="bg-black navbar navbar-dark navbar-expand-lg" data-pg-ia-hide>
+                <div class="container">
+                    <a class="fw-bold navbar-brand text-uppercase" href="#">WildMusic</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor01">
+                        <ul class="ms-auto navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Artists</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tickets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="bg-black text-white">
+            <section class="banner-section min-vh-100" data-pg-ia-scene='{"dir":"a","smooth":"0.5s","s":"onLeave","d":"50%","l":[{"t":".banner-overlay","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":1,"scale":1,"class.remove":"in-scroll"}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0,"scale":20}},{"t":"set","p":0.01,"d":0,"l":{"class.add":"in-scroll"}}]}]}},{"t":"$nav","a":"fadeIn","p":"time","s":"100","t_d":"0.3","sc_dir":"down","rev":"true"}],"pin":"true"}'>
+                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="banner-image" alt="..." width="1080" height="810"/>
+                <div class="banner-overlay d-flex flex-column h-100 min-vh-100 position-relative">
+                    <div class="bg-black flex-fill"></div>
+                    <img src="assets/images/text%20effect.svg" class="banner-text img-fluid w-100" alt="..." width="1440" height="200" data-pg-ia='{"l":[{"trg":"mouseenter","t":"$.banner-section #gt# div","a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":0.2,"l":{"opacity":0},"e":"Quad.easeIn"}]}]},"tc":"no-class","tcv":"in-scroll","rstr":"true"},{"trg":"mouseleave","a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":0.2,"l":{"opacity":1},"e":"Quad.easeIn"}]}]},"tc":"no-class","tcv":"in-scroll","rstr":"true","t":"$.banner-section #gt# div"}]}'/>
+                    <div class="bg-black flex-fill"></div>
+                </div>
+            </section>
+            <section class="py-5 text-center">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h1 class="h4">WildMusic provides global representation to a diverse and dynamic lineup of music artists, collaborating with the most promising up and coming talents on the global market, bringing together the world&apos;s most promising electronic artists on a mission to live the life of a musical nomad and always remain connected with their audience and home countries.</h1> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="event-section position-relative py-5" data-pg-ia-scene='{"s":"onEnter","l":[{"t":".floating-title","a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"-50vh"}}]}]}},{"t":".event-details","a":"fadeInUp","p":"time","s":"20","t_d":"0.5"}]}'>
+                <h2 class="floating-title">Upcoming Events</h2>
+                <div class="container py-5">
+                    <div class="align-items-center row">
+                        <div class="col-lg-7 event-details mb-5 order-lg-2" data-pg-ia-hide>
+                            <p>It was a nice hybrid approach to music, where , probably, some of the riffing was a little too obvious,&quot; said Thielemann. &quot;Some parts are really elegant but a lot of times the chord progression is kind of ridiculous, and people may be doing it on purpose. It&apos;s more embarrassing than anything.&quot; The results, added McLeod, are sound, but that&apos;s not what excites Thielemann.</p>
+                            <a href="#" class="see-more">Buy Tickets</a>
+                        </div>
+                        <div class="col-lg-5 order-lg-1">
+                            <a href="#" class="d-block event-main-link p-4"> <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4" alt="..."/> <h3 class="h4">Spicy with the Jack Pinetree band &amp; Friends</h3><span>02-12-2019</span> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid h-scrolling-block mb-lg-5 overflow-hidden pb-lg-5 pt-lg-5" data-pg-ia-scene='{"l":[{"t":".flex-nowrap","a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"x":"-100vh"}}]}]}}],"s":"onEnter"}'>
+                    <div class="flex-nowrap gx-0 row">
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1462965326201-d02e4f455804?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1488036106564-87ecb155bb15?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="event-section position-relative py-5 text-end" data-pg-ia-scene='{"s":"onEnter","l":[{"t":".event-details","a":"fadeInUp","p":"time","s":"20","t_d":"0.5"}]}'>
+                <div class="container py-5">
+                    <div class="align-items-center row">
+                        <div class="col-lg-7 event-details mb-5" data-pg-ia-hide>
+                            <p>GRAMMY Award-winning, legendary musician Pinos Forrest and will embark on a seven-date journey through North America.The music-minded crew from La Boy Tere día d&apos;etre moves to Santa Fe for a celebration of their biggest hit, &quot;Pins&quot; (2013), their amazing recording of &quot;The Story of Little Feat&quot; (featuring Jesse McCartney and Ned Rockwell), and a new album, where the ensemble will work to deliver an emotional, epic and supercharged symphony</p>
+                            <a href="#" class="see-more">Buy Tickets</a>
+                        </div>
+                        <div class="col-lg-5">
+                            <a href="#" class="d-block event-main-link p-4"> <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4" alt="..."/> <h3 class="h4">Miraculous &amp; Cool<br/>2020 Tour</h3><span>02-12-2019</span> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid h-scrolling-block mb-lg-5 overflow-hidden pb-lg-5 pt-lg-5 py-lg-5" data-pg-ia-scene='{"l":[{"t":".flex-nowrap","a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"x":"100vh"}}]}]}}],"s":"onEnter"}'>
+                    <div class="flex-nowrap gx-0 justify-content-end row">
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1462965326201-d02e4f455804?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1488036106564-87ecb155bb15?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid" alt="..."/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="position-relative py-5 recent-event-section" data-pg-ia-scene='{"s":"onEnter","l":[{"t":".floating-title","a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"y":"-50vh"}}]}]}},{"t":".event-link","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0},"e":"Power1.easeOut"},{"t":"tween","p":0,"d":1,"s":0.25,"l":{"autoAlpha":1},"e":"Power1.easeOut"}]}]},"p":"time","s":"20"}]}'>
+                <h2 class="floating-title">Recent Events</h2>
+                <div class="container py-5">
+                    <div class="gy-3 row">
+                        <div class="col-lg-6">
+                            <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4" alt="..."/> <h3 class="h4">Larry Pineapple - The Road is Straight and Runs Ahead Tour</h3> </a>
+                        </div>
+                        <div class="col-lg-6 pt-lg-5">
+                            <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4" alt="..."/> <h3 class="h4">Blimp McGregor - Why is the Bus Late Again?</h3> </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4" alt="..."/> <h3 class="h4">Cones Part 2 - The Return of the One Who Left</h3> </a>
+                        </div>
+                        <div class="col-lg-6 pt-lg-5">
+                            <a href="#" class="d-block event-link px-4" data-pg-ia-hide> <img src="https://images.unsplash.com/photo-1525362081669-2b476bb628c3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ" class="img-fluid mb-4" alt="..."/> <h3 class="h4">Blake Hiccup and the Famous Unknowns Live</h3> </a>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <a href="#" class="see-more">View All</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-white bottom-0 position-sticky py-5">
+            <div class="container py-5">
+                <div class="align-items-center gy-2 row">
+                    <div class="col-md">
+                        <h2 class="fw-bold">Get In Touch</h2>
+                        <h3 class="h5">info@wildmusic.com</h3>
+                    </div>
+                    <div class="col-md-auto">
+                        <ul class="gap-1 nav social-links"> 
+                            <li class="nav-item"> <a class="nav-link" href="#" aria-label="facebook"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/>
+                                    </svg> </a> 
+                            </li>                             
+                            <li class="nav-item"> <a class="nav-link" href="#" aria-label="twitter"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/>
+                                    </svg> </a> 
+                            </li>                             
+                            <li class="nav-item"> <a class="nav-link" href="#" aria-label="instagram"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+                                    </svg> </a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a class="go-to-top" aria-label="go to top" href="#go-to-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path fill="none" d="M0 0h24v24H0z"/>
+                <path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z"/>
+            </svg></a>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="pgia/lib/pgia.js"></script>
+    </body>
+</html>
