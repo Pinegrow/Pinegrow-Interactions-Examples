@@ -18,6 +18,10 @@
             <g transform="matrix(1,0,0,0.645833,0,66.2292)">
                 <circle cx="920" cy="211" r="24" style="fill:rgb(147,13,185);"/>
             </g>
+            <g transform="matrix(1,0,0,1,265,-89)">
+                <text x="641.001px" y="322.596px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill-opacity:0.8;">Click</text>
+                <text x="645.665px" y="334.988px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill-opacity:0.8;">me</text>
+            </g>
         </g>
         <g id="top" transform="matrix(0.84956,-0.527492,-0.527492,-0.84956,283.919,995.514)">
             <path d="M427.567,378L426.669,259.919L696.801,257.864L697.543,355.415L503.385,356.892C490.504,356.99 480.118,366.408 480.205,377.91L480.207,378L427.567,378Z" style="fill:rgb(235,235,235);"/>
